@@ -27,15 +27,15 @@
 
 ## [BUG_TC04] – Hráč stratí všetky životy po kolízii s okrajom hernej plochy
 
-- **Súvisiaci test:** TC04  
-- **Súvisiaca požiadavka:** BR-4  
-- **Priorita:** Vysoká  
-- **Závažnosť:** Vysoká
+**Súvisiaci test:** TC04  
+**Súvisiaca požiadavka:** BR-4  
+**Priorita:** Vysoká  
+**Závažnosť:** Vysoká
 
-- **Očakávané výsledok:**  
+**Očakávané výsledok:**  
   Hráč by mal stratiť 1 život
 
-- **Skutočné výsledok:**  
+**Skutočné výsledok:**  
   Hráčovi sa odpočítajú všetky životy a hra sa končí
 
 **Kroky na reprodukciu:**
@@ -44,10 +44,10 @@
   2. Navigujeme hada smerom na ktorýkoľvek okraj hernej plochy tak, aby sa jej dotkol
   3. Sledujeme počet životov 
 
-- **Dôkaz:**
+**Dôkaz:**
   [Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
 
-- **Príloha:**
+**Príloha:**
   
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
 
@@ -55,15 +55,15 @@
 
 ## [BUG_TC05] – Had sa po strate života nevráti do pôvodnej veľkosti
 
-- **Súvisiaci test:** TC05  
-- **Súvisiaca požiadavka:** BR-5  
-- **Priorita:** Vysoká  
-- **Závažnosť:** Stredná 
+**Súvisiaci test:** TC05  
+**Súvisiaca požiadavka:** BR-5  
+**Priorita:** Vysoká  
+**Závažnosť:** Stredná 
 
-- **Očakávané výsledok:**  
+**Očakávané výsledok:**  
   Hráč stráca život a had sa vráti do pôvodnej veľkosti 3 blokov
 
-- **Skutočné výsledok:**  
+**Skutočné výsledok:**  
   Hráč stráca život, had ostáva v nadobudnutej veľkosti
 
 **Kroky na reprodukciu:**
@@ -73,7 +73,7 @@
   3. Spôsobíme stratu života nárazom do seba  
   4. Sledujeme veľkosť hada po obnovení hry
 
-- **Príloha:**
+**Príloha:**
   
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC05_Jira.png)
    
@@ -81,15 +81,15 @@
 
 ## [BUG] – Jedlo sa niekedy zobrazuje aj v tele hada
 
-- **Súvisiaci test:** –
-- **Súvisiaca požiadavka:** –
-- **Priorita:** Vysoká  
-- **Závažnosť:** Vysoká
+**Súvisiaci test:** –
+**Súvisiaca požiadavka:** –
+**Priorita:** Vysoká  
+**Závažnosť:** Vysoká
 
-- **Očakávané výsledok:**  
+**Očakávané výsledok:**  
   Jedlo sa nikdy nezobrazí v rámci tela hada
 
-- **Skutočné výsledok:**  
+**Skutočné výsledok:**  
   Jedlo sa niekedy zobrazí v rámci tela hada
 
 **Kroky na reprodukciu:**
@@ -98,8 +98,8 @@
   2. Hráme hru 
   3. Sledujeme zobrazovanie jedla na hracej ploche
 
-- **Dôkaz:**
+**Dôkaz:**
   ![Screenshot Jira](./screenshots/Snake_Game_BUG.png)
 
-- **Príloha:**
+**Príloha:**
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_Jira.png)
