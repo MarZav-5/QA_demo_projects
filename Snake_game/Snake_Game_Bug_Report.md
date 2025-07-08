@@ -2,18 +2,18 @@
 
 ## [BUG_TC02] – Rýchlosť hada sa nezvyšuje po konzumácii jedla
 
-- **Súvisiaci test:** TC02  
-- **Súvisiaca požiadavka:** BR-2  
-- **Priorita:** Stredná  
-- **Závažnosť:** Stredná 
+**Súvisiaci test:** TC02  
+**Súvisiaca požiadavka:** BR-2  
+**Priorita:** Stredná  
+**Závažnosť:** Stredná 
 
-- **Očakávaný výsledok:**  
+**Očakávaný výsledok:**  
   Rýchlosť hada sa po každej konzumácii jedla postupne zvýši
 
-- **Skutočný výsledok:**  
+**Skutočný výsledok:**  
   Rýchlosť hada sa napriek konzumácii jedla nezvyšuje
 
-- **Kroky na reprodukciu:**
+**Kroky na reprodukciu:**
 
   1. Spustíme webovú aplikáciu Snake Game
   2. Necháme hada skonzumovať jedlo niekoľkokrát (5-10x)
@@ -21,8 +21,7 @@
 
 - **Príloha:**
   
-  ![Screenshot Jira]
-  (./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
+  ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
 
 ---
 
