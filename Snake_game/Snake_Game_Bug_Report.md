@@ -85,10 +85,6 @@
 **Environment:**
 - OS: MacOs Sierra 10.12.6
 - Prehliadač: Firefox Browser 15.24.0esr (64-bit)
-
-**Príloha [Jira / Xray]:**
-  
-  ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC05_Jira.png)
    
 ---
 
