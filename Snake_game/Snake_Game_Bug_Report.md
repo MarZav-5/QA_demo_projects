@@ -92,7 +92,7 @@
    
 ---
 
-## [BUG] – Jedlo sa niekedy zobrazuje aj v tele hada
+## [BUG] – Jedlo sa niekedy zobrazuje v tele hada
 
 **Súvisiaci test:** –
 **Súvisiaca požiadavka:** –
