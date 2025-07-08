@@ -13,14 +13,13 @@
 - **Skutočný výsledok:**  
   Rýchlosť hada sa napriek konzumácii jedla nezvyšuje
 
-- **Kroky na reprodukciu:**
-  
+**Kroky na reprodukciu:**
+
   1. Spustíme webovú aplikáciu Snake Game
   2. Necháme hada skonzumovať jedlo niekoľkokrát (5-10x)
   3. Sledujeme rýchlosť pohybu hada
 
 - **Príloha:**
-  
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
 
 ---
@@ -38,7 +37,8 @@
 - **Skutočné výsledok:**  
   Hráčovi sa odpočítajú všetky životy a hra sa končí
 
-- **Kroky na reprodukciu:**
+**Kroky na reprodukciu:**
+
   1. Spustíme webovú aplikáciu Snake Game
   2. Navigujeme hada smerom na ktorýkoľvek okraj hernej plochy tak, aby sa jej dotkol
   3. Sledujeme počet životov 
@@ -64,7 +64,8 @@
 - **Skutočné výsledok:**  
   Hráč stráca život, had ostáva v nadobudnutej veľkosti
 
-- **Kroky na reprodukciu:** 
+**Kroky na reprodukciu:**
+ 
   1. Spustíme webovú aplikáciu Snake Game 
   2. Necháme hada zjesť niekoľko jedál
   3. Spôsobíme stratu života nárazom do seba  
@@ -88,7 +89,8 @@
 - **Skutočné výsledok:**  
   Jedlo sa niekedy zobrazí v rámci tela hada
 
-- **Kroky na reprodukciu:** 
+**Kroky na reprodukciu:**
+ 
   1. Spustíme webovú aplikáciu Snake Game 
   2. Hráme hru 
   3. Sledujeme zobrazovanie jedla na hracej ploche
