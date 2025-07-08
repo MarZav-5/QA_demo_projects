@@ -1,7 +1,10 @@
 # Snake Game – QA Testing Project
 
-Tento projekt slúži ako ukážka základného QA procesu na jednoduchej webovej hre Snake. Zameriava sa na testovanie podľa business požiadaviek, tvorbu testovacích prípadov, zaznamenávanie chýb a ich spracovanie v JIRA / Xray systéme.
-Hru som vytvoril s pomocou ChatGPT, ktorý do kódu zámerne zakomponoval chyby na účely testovania. 
+Tento projekt slúži ako ukážka manuálneho testovacieho procesu v rámci UI, logiky hry a základných prvkov UX na jednoduchej webovej hre Snake. 
+
+Zameriava sa na testovanie podľa business požiadaviek, tvorbu testovacích prípadov, zaznamenávanie chýb a ich spracovanie v JIRA / Xray systéme. 
+
+Hru som vytvoril s pomocou ChatGPT, ktorý do kódu zámerne implementoval chyby na účely testovania. 
 
 
 ---
