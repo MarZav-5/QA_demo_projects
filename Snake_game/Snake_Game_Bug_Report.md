@@ -8,10 +8,10 @@
 **Závažnosť:** Stredná 
 
 **Očakávaný výsledok:**  
-  Rýchlosť hada sa po každej konzumácii jedla postupne zvýši
+- Rýchlosť hada sa po každej konzumácii jedla postupne zvýši
 
 **Skutočný výsledok:**  
-  Rýchlosť hada sa napriek konzumácii jedla nezvyšuje
+- Rýchlosť hada sa napriek konzumácii jedla nezvyšuje
 
 **Kroky na reprodukciu:**
 
@@ -21,8 +21,8 @@
 
 **Environment:**
 
-  OS: MacOs Sierra 10.12.6
-  Prehliadač: Firefox Browser 15.24.0esr (64-bit)
+- OS: MacOs Sierra 10.12.6
+- Prehliadač: Firefox Browser 15.24.0esr (64-bit)
   
 **Príloha [Jira / Xray]:**
   
