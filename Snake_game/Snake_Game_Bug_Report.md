@@ -118,7 +118,3 @@
 **Dôkaz:**
 
   ![Screenshot Jira](./screenshots/Snake_Game_BUG.png)
-
-**Príloha [Jira / Xray]:**
-
-  ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_Jira.png)
