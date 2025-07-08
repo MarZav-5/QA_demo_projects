@@ -21,7 +21,7 @@
 
 **Environment:**
   OS: MacOs Sierra 10.12.6
-  Prehliada4: Firefox Browser 15.24.0esr (64-bit)
+  Prehliadač: Firefox Browser 15.24.0esr (64-bit)
   
 **Príloha [Jira / Xray]:**
   
