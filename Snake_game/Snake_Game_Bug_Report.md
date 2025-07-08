@@ -19,6 +19,10 @@
   2. Necháme hada skonzumovať jedlo niekoľkokrát (5-10x)
   3. Sledujeme rýchlosť pohybu hada
 
+**Environment:**
+  OS: MacOs Sierra 10.12.6
+  Prehliada4: Firefox Browser 15.24.0esr (64-bit)
+  
 **Príloha [Jira / Xray]:**
   
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
@@ -43,6 +47,10 @@
   1. Spustíme webovú aplikáciu Snake Game
   2. Navigujeme hada smerom na ktorýkoľvek okraj hernej plochy tak, aby sa jej dotkol
   3. Sledujeme počet životov 
+
+**Environment:**
+  OS: MacOs Sierra 10.12.6
+  Prehliada4: Firefox Browser 15.24.0esr (64-bit)
 
 **Dôkaz:**
   [Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
@@ -73,6 +81,10 @@
   3. Spôsobíme stratu života nárazom do seba  
   4. Sledujeme veľkosť hada po obnovení hry
 
+**Environment:**
+  OS: MacOs Sierra 10.12.6
+  Prehliada4: Firefox Browser 15.24.0esr (64-bit)
+
 **Príloha [Jira / Xray]:**
   
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC05_Jira.png)
@@ -97,6 +109,10 @@
   1. Spustíme webovú aplikáciu Snake Game 
   2. Hráme hru 
   3. Sledujeme zobrazovanie jedla na hracej ploche
+
+**Environment:**
+  OS: MacOs Sierra 10.12.6
+  Prehliada4: Firefox Browser 15.24.0esr (64-bit)
 
 **Dôkaz:**
 
