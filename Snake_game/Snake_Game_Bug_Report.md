@@ -14,6 +14,7 @@
   Rýchlosť hada sa napriek konzumácii jedla nezvyšuje
 
 - **Kroky na reprodukciu:**
+  
   1. Spustíme webovú aplikáciu Snake Game
   2. Necháme hada skonzumovať jedlo niekoľkokrát (5-10x)
   3. Sledujeme rýchlosť pohybu hada
