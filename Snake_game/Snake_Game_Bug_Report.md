@@ -19,7 +19,7 @@
   2. Necháme hada skonzumovať jedlo niekoľkokrát (5-10x)
   3. Sledujeme rýchlosť pohybu hada
 
-**Príloha:**
+**Príloha [Jira / Xray]:**
   
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
 
