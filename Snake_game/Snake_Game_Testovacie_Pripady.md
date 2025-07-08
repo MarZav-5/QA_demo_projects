@@ -105,7 +105,7 @@ Passed
 - Hráčovi sa odpočítajú všetky životy a hra sa končí 
 
 **Referencia na bug:**  
-[BUG_TC04 – Hráč stratí všetky životy](./Bug_Report.md#bug_tc04--hráč-stratí-všetky-životy-po-kolízii-s-okrajom-hernej-plochy)
+[BUG_TC04 – Hráč stratí všetky životy](./Snake_Game_Bug_Report.md#bug_tc04--hráč-stratí-všetky-životy-po-kolízii-s-okrajom-hernej-plochy)
 
 **Stav:**  
 Failed
@@ -133,7 +133,7 @@ Failed
 - Had sa nevráti na počiatočnú dĺžku, pokračuje v už nadobudnutej
 
 **Referencia na bug:**   
-[BUG_TC05 – Had sa nevráti do pôvodnej veľkosti](./Bug_Report.md#bug_tc05--had-sa-po-strate-života-nevráti-do-pôvodnej-veľkosti)
+[BUG_TC05 – Had sa nevráti do pôvodnej veľkosti](./Snake_Game_Bug_Report.md#bug_tc05--had-sa-po-strate-života-nevráti-do-pôvodnej-veľkosti)
 
 **Stav:**  
 Failed
