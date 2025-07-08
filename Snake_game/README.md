@@ -113,8 +113,8 @@ Príloha:
 
 ## Autor
 
-**Marian Zavarský**   
-GitHub: [github.com/tvoj_username](https://github.com/tvoj_username)  
+**Marián Zavarský**   
+GitHub: [github.com/tvoj_username](https://github.com/MarZav-5)  
 LinkedIn: [linkedin.com/in/marian-zavarsky-13128a1ab](https://linkedin.com/in/marian-zavarsky-13128a1ab)
 
 ---
