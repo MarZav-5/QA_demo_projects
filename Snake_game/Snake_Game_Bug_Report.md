@@ -47,7 +47,7 @@
 **Dôkaz:**
   [Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
 
-**Príloha:**
+**Príloha [Jira / Xray]:**
   
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
 
@@ -73,7 +73,7 @@
   3. Spôsobíme stratu života nárazom do seba  
   4. Sledujeme veľkosť hada po obnovení hry
 
-**Príloha:**
+**Príloha [Jira / Xray]:**
   
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC05_Jira.png)
    
@@ -101,5 +101,5 @@
 **Dôkaz:**
   ![Screenshot Jira](./screenshots/Snake_Game_BUG.png)
 
-**Príloha:**
+**Príloha [Jira / Xray]:**
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_Jira.png)
