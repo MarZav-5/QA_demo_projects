@@ -1,6 +1,6 @@
 # Snake Game – QA Testing Project
 
-Tento projekt slúži ako ukážka manuálneho testovacieho procesu v rámci UI, logiky hry a základných prvkov UX na jednoduchej webovej hre Snake. 
+Tento projekt slúži ako ukážka manuálneho testovacieho procesu v rámci UI a logiky hry na jednoduchej webovej hre Snake. 
 
 Zameriava sa na testovanie podľa business požiadaviek, tvorbu testovacích prípadov, zaznamenávanie chýb a ich spracovanie v JIRA / Xray systéme. 
 
