@@ -1,4 +1,4 @@
-# Bug Report – Snake Game
+# Snake Game – Bug reporty
 
 ## [BUG_TC02] – Rýchlosť hada sa nezvyšuje po konzumácii jedla
 
