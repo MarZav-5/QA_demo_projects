@@ -20,6 +20,7 @@
   3. Sledujeme rýchlosť pohybu hada
 
 **Environment:**
+
   OS: MacOs Sierra 10.12.6
   Prehliadač: Firefox Browser 15.24.0esr (64-bit)
   
