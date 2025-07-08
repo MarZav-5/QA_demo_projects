@@ -51,7 +51,7 @@
 
 **Environment:**
 - OS: MacOs Sierra 10.12.6
-- Prehliada4: Firefox Browser 15.24.0esr (64-bit)
+- Prehliadač: Firefox Browser 15.24.0esr (64-bit)
 
 **Dôkaz:**
   [Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
@@ -84,7 +84,7 @@
 
 **Environment:**
 - OS: MacOs Sierra 10.12.6
-- Prehliada4: Firefox Browser 15.24.0esr (64-bit)
+- Prehliadač: Firefox Browser 15.24.0esr (64-bit)
 
 **Príloha [Jira / Xray]:**
   
@@ -113,7 +113,7 @@
 
 **Environment:**
 - OS: MacOs Sierra 10.12.6  
-  Prehliada4: Firefox Browser 15.24.0esr (64-bit)
+- Prehliadač: Firefox Browser 15.24.0esr (64-bit)
 
 **Dôkaz:**
 
