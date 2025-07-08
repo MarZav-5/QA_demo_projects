@@ -89,7 +89,7 @@ Príloha:
 1. Had sa po konzumácii jedla zväčší  
 2. Rýchlosť hada sa zvyšuje s každým jedlom  
 3. Hráč stratí 1 život po kolízii so sebou  
-4. Hráč stratí 1 život po kolízii s okrajom  
+4. Hráč stratí 1 život po kolízii s okrajom hernej plochy 
 5. Po strate života sa had vráti na pôvodnú veľkosť  
 
 ---
