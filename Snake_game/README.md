@@ -21,10 +21,11 @@ Hru som vytvoril s pomocou ChatGPT, ktorý do kódu zámerne zakomponoval chyby 
 ## Ukážka testovacieho prípadu
 
 ```plaintext
-TC002 – Rýchlosť hada sa postupne zvyšuje s počtom skonzumovaného jedla
+TC02 – Rýchlosť hada sa postupne zvyšuje s počtom skonzumovaného jedla
 
 PRE-REQ:
-- Hra spustená v prehliadači
+- Herná stránka je otvorená v prehliadači  
+- Hra je spustená a beží  
 
 Kroky:
 1. Naviguj hada k jedlu a nechaj ho zjesť
@@ -39,11 +40,15 @@ Skutočný výsledok:
 
 Stav:
 Failed
+
+Referencia na bug: 
+[BUG_TC02 – Rýchlosť hada sa nezvyšuje](./Bug_Report.md#bug_tc02--rýchlosť-hada-sa-nezvyšuje-po-konzumácii-jedla)
+
 ```
 
 ---
 
-## Ukážka reportovanej chyby
+## Ukážka bug reportu
 
 ```plaintext
 BUG_TC04 – Hráč stratí všetky životy po kolízii s okrajom hernej plochy
@@ -53,25 +58,25 @@ Súvisiaca požiadavka: BR-4
 Priorita: Vysoká  
 Závažnosť: Vysoká
 
-Očakávané správanie:
-- Hráč by mal stratiť iba 1 život
+Očakávané výsledok:
+ - Hráč by mal stratiť 1 život
 
-Skutočné správanie:
-- Hráč stratí všetky životy a hra sa okamžite končí
+Skutočné výsledok:
+ - Hráčovi sa odpočítajú všetky životy a hra sa končí
 
 Kroky na reprodukciu:
-1. Spustiť Snake Game
-2. Navigovať hada priamo k okraju hracej plochy
-3. Sleduj počet zostávajúcich životov
+1. Spustíme webovú aplikáciu Snake Game
+2. Navigujeme hada smerom na ktorýkoľvek okraj hernej plochy tak, aby sa jej dotkol
+3. Sledujeme počet životov 
 
 Stav:  
 Open
 
 Video dôkaz:
-[MOV](./screenshots/Snake_Game_BUG_TC04.mov)
+[Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
 
 Príloha:
-![Screenshot](./screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
+![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
 ```
 
 ---
@@ -100,5 +105,13 @@ Príloha:
 
 - [Testovacie prípady (Markdown)](./Snake_Game_Testovacie_Pripady.md)  
 - [Bug reporty (Markdown)](./Snake_Game_Bug_Report.md)
+
+---
+
+## Autor
+
+**Marian Zavarský**   
+GitHub: [github.com/tvoj_username](https://github.com/tvoj_username)  
+LinkedIn: [linkedin.com/in/marian-zavarsky-13128a1ab](https://linkedin.com/in/marian-zavarsky-13128a1ab)
 
 ---
