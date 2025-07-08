@@ -139,4 +139,4 @@ Failed
 Failed
 
 **Príloha:**
-![Screenshot: Jira Test Case TC05](./screenshots/ss_Snake_Game_TC05_Jira.png)
+![Screenshot: Jira Test Case TC05](./screenshots/jira/ss_Snake_Game_TC05_Jira.png)
