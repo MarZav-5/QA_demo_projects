@@ -21,7 +21,8 @@
 
 - **Príloha:**
   
-  ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
+  ![Screenshot Jira]
+  (./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
 
 ---
 
