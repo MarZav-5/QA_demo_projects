@@ -56,7 +56,7 @@ Passed
 - Rýchlosť hada sa konzumáciou jedla nezvyšuje 
 
 **Referencia na bug:**  
-[BUG_TC02 – Rýchlosť hada sa nezvyšuje](./Snake_Game_Bug_Report.md#bug_tc02--rýchlosť-hada-sa-nezvyšuje-po-konzumácii-jedla)
+[BUG_TC02 – Rýchlosť hada sa nezvyšuje po konzumácii jedla](./Snake_Game_Bug_Report.md#bug_tc02--rýchlosť-hada-sa-nezvyšuje-po-konzumácii-jedla)
 
 **Stav:**  
 Failed
