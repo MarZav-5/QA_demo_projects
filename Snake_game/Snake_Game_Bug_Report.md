@@ -13,13 +13,14 @@
 - **Skutočný výsledok:**  
   Rýchlosť hada sa napriek konzumácii jedla nezvyšuje
 
-**Kroky na reprodukciu:**
+- **Kroky na reprodukciu:**
 
   1. Spustíme webovú aplikáciu Snake Game
   2. Necháme hada skonzumovať jedlo niekoľkokrát (5-10x)
   3. Sledujeme rýchlosť pohybu hada
 
 - **Príloha:**
+  
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
 
 ---
@@ -47,6 +48,7 @@
   [Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
 
 - **Príloha:**
+  
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
 
 ---
@@ -72,6 +74,7 @@
   4. Sledujeme veľkosť hada po obnovení hry
 
 - **Príloha:**
+  
   ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC05_Jira.png)
    
 ---
