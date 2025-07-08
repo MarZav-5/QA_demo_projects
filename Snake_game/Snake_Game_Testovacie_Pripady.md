@@ -105,7 +105,7 @@ Passed
 - Hráčovi sa odpočítajú všetky životy a hra sa končí 
 
 **Referencia na bug:**  
-[BUG_TC04 – Hráč stratí všetky životy](./Snake_Game_Bug_Report.md#bug_tc04--hráč-stratí-všetky-životy-po-kolízii-s-okrajom-hernej-plochy)
+[BUG_TC04 – Hráč stratí všetky životy po kolízii s okrajom hernej plochy](./Snake_Game_Bug_Report.md#bug_tc04--hráč-stratí-všetky-životy-po-kolízii-s-okrajom-hernej-plochy)
 
 **Stav:**  
 Failed
