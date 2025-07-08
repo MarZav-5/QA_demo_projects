@@ -13,7 +13,7 @@
 - **Skutočný výsledok:**  
   Rýchlosť hada sa napriek konzumácii jedla nezvyšuje
 
-- **Kroky na reprodukciu:**
+  **Kroky na reprodukciu:**
   
   1. Spustíme webovú aplikáciu Snake Game
   2. Necháme hada skonzumovať jedlo niekoľkokrát (5-10x)
