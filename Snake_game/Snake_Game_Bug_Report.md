@@ -38,10 +38,10 @@
 **Závažnosť:** Vysoká
 
 **Očakávané výsledok:**  
-  Hráč by mal stratiť 1 život
+- Hráč by mal stratiť 1 život
 
 **Skutočné výsledok:**  
-  Hráčovi sa odpočítajú všetky životy a hra sa končí
+- Hráčovi sa odpočítajú všetky životy a hra sa končí
 
 **Kroky na reprodukciu:**
 
@@ -50,8 +50,8 @@
   3. Sledujeme počet životov 
 
 **Environment:**
-  OS: MacOs Sierra 10.12.6
-  Prehliada4: Firefox Browser 15.24.0esr (64-bit)
+- OS: MacOs Sierra 10.12.6
+- Prehliada4: Firefox Browser 15.24.0esr (64-bit)
 
 **Dôkaz:**
   [Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
@@ -70,10 +70,10 @@
 **Závažnosť:** Stredná 
 
 **Očakávané výsledok:**  
-  Hráč stráca život a had sa vráti do pôvodnej veľkosti 3 blokov
+- Hráč stráca život a had sa vráti do pôvodnej veľkosti 3 blokov
 
 **Skutočné výsledok:**  
-  Hráč stráca život, had ostáva v nadobudnutej veľkosti
+- Hráč stráca život, had ostáva v nadobudnutej veľkosti
 
 **Kroky na reprodukciu:**
  
@@ -83,8 +83,8 @@
   4. Sledujeme veľkosť hada po obnovení hry
 
 **Environment:**
-  OS: MacOs Sierra 10.12.6
-  Prehliada4: Firefox Browser 15.24.0esr (64-bit)
+- OS: MacOs Sierra 10.12.6
+- Prehliada4: Firefox Browser 15.24.0esr (64-bit)
 
 **Príloha [Jira / Xray]:**
   
@@ -100,10 +100,10 @@
 **Závažnosť:** Vysoká
 
 **Očakávané výsledok:**  
-  Jedlo sa nikdy nezobrazí v rámci tela hada
+- Jedlo sa nikdy nezobrazí v rámci tela hada
 
 **Skutočné výsledok:**  
-  Jedlo sa niekedy zobrazí v rámci tela hada
+- Jedlo sa niekedy zobrazí v rámci tela hada
 
 **Kroky na reprodukciu:**
  
@@ -112,7 +112,7 @@
   3. Sledujeme zobrazovanie jedla na hracej ploche
 
 **Environment:**
-  OS: MacOs Sierra 10.12.6
+- OS: MacOs Sierra 10.12.6  
   Prehliada4: Firefox Browser 15.24.0esr (64-bit)
 
 **Dôkaz:**
