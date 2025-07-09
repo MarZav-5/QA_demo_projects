@@ -53,7 +53,7 @@ Stav:
 Failed
 
 Referencia na bug: 
-[BUG_TC02 – Rýchlosť hada sa nezvyšuje](./Bug_Report.md#bug_tc02--rýchlosť-hada-sa-nezvyšuje-po-konzumácii-jedla)
+BUG_TC04 – Hráč stratí všetky životy po kolízii s okrajom hernej plochy
 
 ```
 
@@ -68,6 +68,9 @@ Súvisiaci test: TC04
 Súvisiaca požiadavka: BR-4  
 Priorita: Vysoká  
 Závažnosť: Vysoká
+
+Popis:
+– Po strete hada s ktorýmkoľvek okrajom hracej plochy sa hráčovi ihneď odpočítajú všetky životy a hra sa končí.
 
 Očakávané výsledok:
  - Hráč by mal stratiť 1 život
@@ -84,10 +87,10 @@ Stav:
 Open
 
 Video dôkaz:
-[Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
+(./screenshots/Snake_Game_BUG_TC04.mov)
 
 Príloha:
-![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
+(./screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
 ```
 
 ---
