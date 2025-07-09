@@ -26,7 +26,7 @@ Hru som vytvoril s pomocou ChatGPT, ktorý do kódu zámerne implementoval chyby
 ## Odkaz na aplikáciu
 
 Testovaná webová hra bola dostupná na:  
-[`https://snake-game-for-qa.netlify.app/`](https://snake-game-qa.netlify.app/))
+[`https://snake-game-for-qa.netlify.app/`](https://snake-game-qa.netlify.app/)
 
 ---
 ## Ukážka testovacieho prípadu
