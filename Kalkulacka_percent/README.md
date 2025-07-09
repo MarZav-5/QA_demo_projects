@@ -32,36 +32,35 @@ Testovaná webová aplikácia bola dostupná na:
 ## Ukážka testovacieho prípadu
 
 ```plaintext
-## Testovací Prípad TC03 – Výpočet s nečíselnými vstupmi
+estovací Prípad TC03 – Výpočet s nečíselnými vstupmi
 
-**Súvisiaca BR:** BR-3  
-**Priorita:** Stredná  
+Súvisiaca BR: BR-3  
+Priorita:** Stredná  
 
-**PRE-REQ:**  
+PRE-REQ:
 - Webová aplikácia kalkulačky je otvorená v prehliadači  
 
-**Data:**
+Data:
 - https://percentage-calculator-2.netlify.app/
 - Part: abc
 - Whole: #
 
-**Kroky:**  
+Kroky:
 1. Do poľa "Part" zadaj text "#_" 
 2. Do poľa "Whole" zadaj znak "ab"  
 3. Klikni na tlačidlo "Calculate“
 
-**Očakávaný výsledok:**  
+Očakávaný výsledok:
 - Zobrazí sa chybové hlásenie "Prosím, zadajte číselné hodnoty"
 
-**Skutočný výsledok:**  
+Skutočný výsledok:
 - Zobrazí sa "NaN%"
 
-**Stav:**  
+Stav:
 Failed
 
-**Referencia na bug:**  
+Referencia na bug:
 
-[BUG – Kalkulačka zobrazuje "NaN%" pri nečíselných vstupoch](./Kalkulacka_Bug_Report.md#bug-kalkulačka-zobrazuje-nan-pri-nečíselných-vstupoch)
 
 ```
 
@@ -70,39 +69,39 @@ Failed
 ## Ukážka bug reportu
 
 ```plaintext
-## [BUG] – Príliš veľa desatinných miest vo výsledku
+[BUG] – Príliš veľa desatinných miest vo výsledku
 
-**Súvisiaci test:** TC_06 
-**Priorita:** Nízka  
-**Závažnosť:** Stredná
+Súvisiaci test: TC_06 
+Priorita: Nízka  
+Závažnosť: Stredná
 
-**Popis:**
+Popis:
 - Výsledok s desatinnými číslami nie je nastavený na zaokrúhľovanie a obsahuje viac ako 10 desatinných miest.
 
-**Očakávaný výsledok:**  
+Očakávaný výsledok:
 - Zobrazí sa zaokrúhlený výsledok na 2 desatiné miesta (napr. 3.33%)
 
-**Skutočný výsledok:**  
+Skutočný výsledok:
 - Zobrazí sa výsledok s nadbytočným množstvom desatinných miest (napr. 33.33333333333333%)
 
-**Kroky na reprodukciu:**  
+Kroky na reprodukciu:
 
   1. Spustíme webovú aplikáciu kalkulačky  
   2. Do poľa "Part" napíšeme 3  
   3. Do poľa "Whole" napíšeme 9  
   4. Stlačíme tlačidlo "Calculate"
 
-**Navrhované riešenie:**
+Navrhované riešenie:
   - Výpočet je v kóde nastavený ako (part / whole) * 100, odporúčam doplniť funkciu toFixed(2).
 
-**Environment:**
+Environment:
 
 - OS: MacOs Sierra 10.12.6
 - Prehliadač: Firefox Browser 15.24.0esr (64-bit)
 
-**Dôkaz:**  
+Dôkaz:  
   
-  ![Screenshot](./screenshots/KALK_Bug_desatine_miesta.png)
+(./screenshots/KALK_Bug_desatine_miesta.png
 ```
 
 ---
