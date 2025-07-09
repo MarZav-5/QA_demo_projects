@@ -41,7 +41,7 @@
 **Závažnosť:** Vysoká
 
 **Popis:**  
-– Po strete hada s ktorýmkoľvek okrajom hracej plochy sa hráčovi ihneď odpočítajú všetky životy a hra sa končí.
+- Po strete hada s ktorýmkoľvek okrajom hracej plochy sa hráčovi ihneď odpočítajú všetky životy a hra sa končí.
 
 **Očakávané výsledok:**  
 - Hráč by mal stratiť 1 život
@@ -76,7 +76,7 @@
 **Závažnosť:** Stredná 
 
 **Popis:**  
-– Had sa po strate života nevráti do svojej pôvodnej veľkosti 3 blokov a pokračuje ďalej v nadobudnutej veľkosti.
+- Had sa po strate života nevráti do svojej pôvodnej veľkosti 3 blokov a pokračuje ďalej v nadobudnutej veľkosti.
 
 **Očakávané výsledok:**  
 - Hráč stráca život a had sa vráti do pôvodnej veľkosti 3 blokov
@@ -105,7 +105,7 @@
 **Závažnosť:** Vysoká
 
 **Popis:**   
-Jedlo pre hada sa niekedy zobrazí aj v rámci blokov jeho tela, čo by pri konzumácii spôsobilo stratu života
+- Jedlo pre hada sa niekedy zobrazí aj v rámci blokov jeho tela, čo by pri konzumácii spôsobilo stratu života
 
 **Očakávané výsledok:**  
 - Jedlo sa nikdy nezobrazí v rámci tela hada
