@@ -75,6 +75,9 @@
 **Priorita:** Vysoká  
 **Závažnosť:** Stredná 
 
+**Popis:**
+– Had sa po strate života nevráti do svojej pôvodnej veľkosti 3 blokov a pokračuje ďalej v nadobudnutej veľkosti.
+
 **Očakávané výsledok:**  
 - Hráč stráca život a had sa vráti do pôvodnej veľkosti 3 blokov
 
