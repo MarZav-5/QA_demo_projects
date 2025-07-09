@@ -60,7 +60,7 @@ Stav:
 Failed
 
 Referencia na bug:
-
+[BUG] – Kalkulačka zobrazuje "NaN%" pri nečíselných vstupoch
 
 ```
 
