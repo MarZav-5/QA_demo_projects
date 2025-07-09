@@ -7,7 +7,7 @@
 **Priorita:** Stredná  
 **Závažnosť:** Stredná 
 
-**Popis:**
+**Popis:**  
 - Rýchlosť hada sa nezvyšuje napriek kontinuálnej konzumácii jedla
 
 **Očakávaný výsledok:**  
@@ -40,7 +40,7 @@
 **Priorita:** Vysoká  
 **Závažnosť:** Vysoká
 
-**Popis:**
+**Popis:**  
 – Po strete hada s ktorýmkoľvek okrajom hracej plochy sa hráčovi ihneď odpočítajú všetky životy a hra sa končí.
 
 **Očakávané výsledok:**  
@@ -75,7 +75,7 @@
 **Priorita:** Vysoká  
 **Závažnosť:** Stredná 
 
-**Popis:**
+**Popis:**  
 – Had sa po strate života nevráti do svojej pôvodnej veľkosti 3 blokov a pokračuje ďalej v nadobudnutej veľkosti.
 
 **Očakávané výsledok:**  
@@ -104,7 +104,7 @@
 **Priorita:** Vysoká  
 **Závažnosť:** Vysoká
 
-**Popis:** 
+**Popis:**   
 Jedlo pre hada sa niekedy zobrazí aj v rámci blokov jeho tela, čo by pri konzumácii spôsobilo stratu života
 
 **Očakávané výsledok:**  
