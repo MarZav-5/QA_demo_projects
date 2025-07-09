@@ -14,13 +14,21 @@ Hru som vytvoril s pomocou ChatGPT, ktorý do kódu zámerne implementoval chyby
 - **Zameranie:** funkčné testovanie webovej hry
 - **Testovacie prípady:** 5 prípadov navrhnutých podľa špecifikovaných požiadaviek
 - **Nájdené chyby:** 4 bugy s rôznou prioritou a závažnosťou
-- **Použité nástroje:** JIRA / Xray, Markdown, manuálne testovanie
+- **Použité nástroje:** JIRA / Xray, Markdown, manuálne testovanie, Visual Studio Code, Netlify, GitHub
+- **Testovacie prostredie:** MacOS Sierra, Firefox ESR
 - **Priložené súbory:**
+
   - [Testovacie prípady](./Snake_Game_Testovacie_Pripady.md)
   - [Bug reporty](./Snake_Game_Bug_Report.md)
 
 ---
 
+## Odkaz na aplikáciu
+
+Testovaná webová hra bola dostupná na:  
+[`https://snake-game-for-testing.netlify.app/`](https://snake-game-for-testing.netlify.app/)
+
+---
 ## Ukážka testovacieho prípadu
 
 ```plaintext
@@ -115,6 +123,6 @@ Príloha:
 
 **Marián Zavarský**   
 GitHub: [github.com/tvoj_username](https://github.com/MarZav-5)  
-LinkedIn: [linkedin.com/in/marian-zavarsky-13128a1ab](https://linkedin.com/in/marian-zavarsky-13128a1ab)
+
 
 ---
