@@ -7,6 +7,9 @@
 **Priorita:** Stredná  
 **Závažnosť:** Stredná 
 
+**Popis:**
+- Rýchlosť hada sa nezvyšuje napriek kontinuálnej konzumácii jedla
+
 **Očakávaný výsledok:**  
 - Rýchlosť hada sa po každej konzumácii jedla postupne zvýši
 
@@ -36,6 +39,9 @@
 **Súvisiaca požiadavka:** BR-4  
 **Priorita:** Vysoká  
 **Závažnosť:** Vysoká
+
+**Popis:**
+– Po strete hada s ktorýmkoľvek okrajom hracej plochy sa hráčovi ihneď odpočítajú všetky životy a hra sa končí.
 
 **Očakávané výsledok:**  
 - Hráč by mal stratiť 1 život
@@ -94,6 +100,9 @@
 **Súvisiaca požiadavka:** –
 **Priorita:** Vysoká  
 **Závažnosť:** Vysoká
+
+**Popis:** 
+Jedlo pre hada sa niekedy zobrazí aj v rámci blokov jeho tela, čo by pri konzumácii spôsobilo stratu života
 
 **Očakávané výsledok:**  
 - Jedlo sa nikdy nezobrazí v rámci tela hada
