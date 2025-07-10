@@ -1,4 +1,4 @@
-# WEB_Vysledky_hodnotenia – QA Testing projekt
+# WEB Výsledky hodnotenia – QA Testing projekt
 
 Tento projekt demonštruje manuálne testovanie jednoduchej webovej aplikácie, ktorá umožňuje používateľom zobraziť výsledky semestrálneho testu po zadaní emailovej adresy a následne si stiahnuť scan svojho testu.
 
@@ -23,7 +23,7 @@ Web bol pôvodne vytvorený ako pomôcka pre študentov na Vysokej škole múzic
 ## Odkaz na aplikáciu
 
 Testovaná webová aplikácia bola dostupná na:  
-[`https://percentage-calculator-2.netlify.app/`](https://percentage-calculator-2.netlify.app/)
+[`https://webtest-solfeggio.netlify.app/`](https://webtest-solfeggio.netlify.app/)
 
 ---
 
