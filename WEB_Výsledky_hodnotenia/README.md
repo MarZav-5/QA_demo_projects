@@ -1,4 +1,4 @@
-# WEB Výsledky hodnotenia – QA Testing projekt
+# WEB_Vysledky_hodnotenia – QA Testing projekt
 
 Tento projekt demonštruje manuálne testovanie jednoduchej webovej aplikácie, ktorá umožňuje používateľom zobraziť výsledky semestrálneho testu po zadaní emailovej adresy a následne si stiahnuť scan svojho testu.
 
@@ -20,10 +20,10 @@ Web bol pôvodne vytvorený ako pomôcka pre študentov na Vysokej škole múzic
 
 ---
 
-## Business požiadavky (BR)
+## Odkaz na aplikáciu
 
-1. Študenti si zobrazia výsledky semestrálneho testu po zadaní svojej emailovej adresy.
-2. Študenti si stiahnu scan svojho semestrálneho testu.
+Testovaná webová aplikácia bola dostupná na:  
+[`https://percentage-calculator-2.netlify.app/`](https://percentage-calculator-2.netlify.app/)
 
 ---
 
@@ -60,11 +60,19 @@ Passed
 
 ---
 
+## Business požiadavky (BR)
+
+1. Študenti si zobrazia výsledky semestrálneho testu po zadaní svojej emailovej adresy.
+2. Študenti si stiahnu scan svojho semestrálneho testu.
+
+---
+
 ## Ukážka práce v JIRA / Xray
 
 ![All work](./screenshots/jira/ss_WEB_All_work_Jira.png)  
 ![Test Execution](./screenshots/jira/ss_WEB_board_TExe_Jira.png)
 ![Test case](./screenshots/jira/ss_WEB_TC03_Jira.png)
+
 
 ---
 
