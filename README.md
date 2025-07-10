@@ -119,7 +119,7 @@ Dôkaz:
 
 ---
 
-### 3. Snake Game – testovanie interaktívneho správania
+### 3. Snake Game
 
 Webová verzia klasickej hry Snake s nasimulovanými chybami. Slúži ako cvičenie z testovania UI, kolízií, pohybu a reakcií systému. Obsahuje aj video dôkaz bugu.
 
