@@ -163,17 +163,17 @@ Dôkaz:
 
 ![All work](./Kalkulačka_percent/screenshots/jira/ss_Snake_Game_All_work_Jira.png)
 
-## ---
+---
 
-## Použité nástroje a technológie**
+## Použité nástroje a technológie
 
 - **Test management:** JIRA + Xray  
-- **Bug tracking:** Screenshots, video, komentáre  
+- **Bug tracking:** Screenshoty, video, komentáre  
 - **Formát:** Markdown, manuálne testovanie  
 - **Testovacie prostredie:** macOS Sierra, Firefox ESR  
 - **Editácia kódu:** Visual Studio Code  
 
-## ---
+---
 
 
 ## Cieľ repozitára
