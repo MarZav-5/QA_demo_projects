@@ -4,7 +4,7 @@ Tento projekt slúži ako ukážka manuálneho testovania webovej aplikácie –
 
 Zameriava sa na testovanie **UI**, **logiky výpočtu** a základných prvkov **UX**. Cieľom bolo odhaliť nedostatky v správaní aplikácie pri bežných aj hraničných vstupoch. 
 
-Aplikáciu som vytvoril s pomocou ChatGPT a upravil do UI webovej podoby. V zadaní som zámerne prikázal do aplikácie implementovať náhodné chyby, ktoré následne slúžili ako predmet manuálneho testovania a dokumentácie v bug reportoch.
+Aplikácia bola vytvorená s využitím asistencie ChatGPT a upravená do funkčnej webovej podoby. Do zadania som zámerne nechal implementovať chyby, ktoré slúžia ako základ pre manuálne testovanie a dokumentáciu bug reportov.
 
 ---
 
