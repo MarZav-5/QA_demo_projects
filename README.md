@@ -18,7 +18,7 @@ Webová aplikácia, ktorá umožňuje študentom po zadaní emailu zobraziť vý
 - **Testovacích prípadov:** 5
 - **Stav:** všetky testy prešli
 
-- [README projektu](./WEB Výsledky hodnotenia/README.md)
+- [README projektu](./WEB_Výsledky_hodnotenia/README.md)
 
 
 **Ukážka testovacieho prípadu**
@@ -69,7 +69,7 @@ Jednoduchá aplikácia na výpočet percenta. Vytvorená s úmyselnými chybami,
 - **Testovacích prípadov:** 6
 - **Bug reporty:** 4
 
-- [README projektu](./Kalkulačka percent/README.md)
+- [README projektu](./Kalkulacka_percent/README.md)
 
 
 **Ukážka bug reportu**
@@ -113,9 +113,9 @@ Dôkaz:
 
 **Ukážka práce v JIRA/Xray:**
 
-![Bug – desatinné miesta](./Kalkulačka_percent/screenshots/jira/ss_KALK_TC06_Jira.png)
+![Bug – desatinné miesta](./Kalkulacka_percent/screenshots/jira/ss_KALK_TC06_Jira.png)
 
-![All work](./Kalkulačka_percent/screenshots/jira/ss_KALK_All_work_Jira.png)
+![All work](./Kalkulacka_percent/screenshots/jira/ss_KALK_All_work_Jira.png)
 
 ---
 
