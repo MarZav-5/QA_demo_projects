@@ -159,9 +159,9 @@ Dôkaz:
 
 **Ukážka práce v JIRA/Xray:**
 
-![Bug – TC04](./Snake game/screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
+![Bug – TC04](./Snake_game/screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
 
-![All work](./Kalkulačka_percent/screenshots/jira/ss_Snake_Game_All_work_Jira.png)
+![All work](./Snake_game/screenshots/jira/ss_Snake_Game_All_work_Jira.png)
 
 ---
 ---
