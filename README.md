@@ -30,23 +30,23 @@ Súvisiaca BR: BR-1
 Priorita: Vysoká  
 
 Popis:
-- Po zadaní emailovej adresy v neplatnom formáte sa zobrazí chybové hlásenie
+Po zadaní emailovej adresy v neplatnom formáte sa zobrazí chybové hlásenie
 
 PRE-REQ:
-- Stránka je načítaná
+Stránka je načítaná
 
 Data:  
-- abc@.com
+abc@.com
 
 Kroky:  
 1. Zadaj do email inputu "ab@.com"
 2. Klikni na button "Zobraz výsledky"  
 
 Očakávaný výsledok:  
-- Zobrazí sa chybové hlásenie "Nesprávny email. Skús znova."  
+Zobrazí sa chybové hlásenie "Nesprávny email. Skús znova."  
 
 Skutočný výsledok:
-- Zobrazil sa chybové hlásenie "Nesprávny email. Skús znova."  
+Zobrazil sa chybové hlásenie "Nesprávny email. Skús znova."  
 
 Stav:
 Passed  
@@ -83,13 +83,13 @@ Priorita: Nízka
 Závažnosť: Stredná
 
 Popis:
-- Výsledok s desatinnými číslami nie je nastavený na zaokrúhľovanie a obsahuje viac ako 10 desatinných miest.
+Výsledok s desatinnými číslami nie je nastavený na zaokrúhľovanie a obsahuje viac ako 10 desatinných miest.
 
 Očakávaný výsledok:  
-- Zobrazí sa zaokrúhlený výsledok na 2 desatiné miesta (napr. 3.33%)
+Zobrazí sa zaokrúhlený výsledok na 2 desatiné miesta (napr. 3.33%)
 
 Skutočný výsledok:  
-- Zobrazí sa výsledok s nadbytočným množstvom desatinných miest (napr. 33.33333333333333%)
+Zobrazí sa výsledok s nadbytočným množstvom desatinných miest (napr. 33.33333333333333%)
 
 Kroky na reprodukciu:  
 
@@ -99,15 +99,15 @@ Kroky na reprodukciu:
   4. Stlačíme tlačidlo "Calculate"
 
 Navrhované riešenie:
-  - Odporúčam doplniť funkciu toFixed(2).
+Odporúčam doplniť funkciu toFixed(2).
 
 Environment:
 
-- OS: MacOs Sierra 10.12.6
-- Prehliadač: Firefox Browser 15.24.0esr (64-bit)
+OS: MacOs Sierra 10.12.6
+Prehliadač: Firefox Browser 15.24.0esr (64-bit)
 
 Dôkaz:  
-  (./screenshots/KALK_Bug_desatine_miesta.png)
+(./screenshots/KALK_Bug_desatine_miesta.png)
   
 ```
 
@@ -140,13 +140,13 @@ Priorita: Vysoká
 Závažnosť: Vysoká
 
 Popis:
-- Had sa po strate života nevráti do svojej pôvodnej veľkosti 3 blokov a pokračuje ďalej v nadobudnutej veľkosti.
+Had sa po strate života nevráti do svojej pôvodnej veľkosti 3 blokov a pokračuje ďalej v nadobudnutej veľkosti.
 
 Očakávaný výsledok:
-- Hráč by mal stratiť 1 život
+Hráč by mal stratiť 1 život
 
 Skutočný výsledok:
-- Hráčovi sa odpočítajú všetky životy a hra sa končí
+Hráčovi sa odpočítajú všetky životy a hra sa končí
 
 Kroky na reprodukciu:
   1. Spustíme webovú aplikáciu Snake Game
@@ -154,7 +154,7 @@ Kroky na reprodukciu:
   3. Sledujeme počet životov 
 
 Dôkaz:
-  [Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
+[Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
 ```
 
 **Ukážka práce v JIRA/Xray:**
