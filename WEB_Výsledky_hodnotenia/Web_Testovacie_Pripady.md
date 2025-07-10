@@ -1,4 +1,4 @@
-# WEB_Výsledky_hodnotenia – Testovacie prípady
+# WEB Výsledky hodnotenia – Testovacie prípady
 
 ## Business požiadavky (BR)
 
