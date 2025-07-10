@@ -1,4 +1,4 @@
-# Zobrazenie výsledkov študentov – Testovacie prípady
+# WEB_Výsledky_hodnotenia – Testovacie prípady
 
 ## Business požiadavky (BR)
 
