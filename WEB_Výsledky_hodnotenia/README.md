@@ -4,7 +4,7 @@ Tento projekt demonštruje manuálne testovanie jednoduchej webovej aplikácie, 
 
 Testovanie je zamerané na **verifikáciu emailového vstupu**, **správne reakcie systému na rôzne typy vstupov** (platné, neplatné, neexistujúce) a **funkčnosť odkazu na stiahnutie súboru**. Pokrýva pozitívne, negatívne aj hraničné scenáre (edge cases).
 
-Web bol pôvodne vytvorený ako pomôcka pre študentov na Vysokej škole múzických umení (kurz Solfeggio), kde som pôsobil. Neskôr som ju upravil a doplnil o testovaciu dokumentáciu ako ukážkový QA projekt.
+Web bol pôvodne vytvorený ako pomôcka pre študentov na Vysokej škole múzických umení. Neskôr som ju upravil a doplnil o testovaciu dokumentáciu ako ukážkový QA projekt.
 
 ---
 
