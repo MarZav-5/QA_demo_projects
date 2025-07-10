@@ -13,7 +13,8 @@ Aplikácia bola vytvorená s využitím asistencie ChatGPT a upravená do funkč
 - **Zameranie:** funkčné testovanie webovej aplikácie
 - **Testovacie prípady:** 6 prípadov navrhnutých podľa špecifikovaných požiadaviek
 - **Nájdené chyby:** 4 bugy s rôznou prioritou a závažnosťou
-- **Použité nástroje:** JIRA / Xray, manuálne testovanie, Visual Studio Code, Netlify, GitHub, Markdown
+- **Typ testovania:** Manuálne
+- **Použité nástroje:** JIRA / Xray, Visual Studio Code, Netlify, GitHub, Markdown
 - **Testovacie prostredie:** MacOS Sierra, Firefox ESR
 - **Priložené súbory:**
 
