@@ -14,7 +14,8 @@ Hra bola vytvorená s využitím ChatGPT a upravená do funkčnej webovej formy.
 - **Zameranie:** funkčné testovanie webovej hry
 - **Testovacie prípady:** 5 prípadov navrhnutých podľa špecifikovaných požiadaviek
 - **Nájdené chyby:** 4 bugy s rôznou prioritou a závažnosťou
-- **Použité nástroje:** JIRA / Xray, Markdown, manuálne testovanie, Visual Studio Code, Netlify, GitHub
+- **Typ testovania:** Manuálne
+- **Použité nástroje:** JIRA / Xray, Markdown, Visual Studio Code, Netlify, GitHub
 - **Testovacie prostredie:** MacOS Sierra, Firefox ESR
 - **Priložené súbory:**
 
