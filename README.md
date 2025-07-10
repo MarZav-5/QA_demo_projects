@@ -127,7 +127,7 @@ Webová verzia klasickej hry Snake s nasimulovanými chybami. Slúži ako cviče
 - **Testovacích prípadov:** 6
 - **Bug reporty:** 5
 
-- [README projektu](./Snake game/README.md)
+- [README projektu](./Snake_game/README.md)
 
 **Ukážka bud reportu**
 
