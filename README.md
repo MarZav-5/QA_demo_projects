@@ -165,7 +165,7 @@ Dôkaz:
 
 ---
 
-<h3 align="center"> Použité nástroje a technológie</h3>
+**Použité nástroje a technológie**
 
 - **Test management:** JIRA + Xray  
 - **Bug tracking:** Screenshots, video, komentáre  
