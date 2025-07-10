@@ -137,7 +137,7 @@ Dôkaz:
 ## Autor
 
 **Marián Zavarský**   
-GitHub: [github.com/tvoj_username](https://github.com/MarZav-5)  
+GitHub: [github.com/MarZav-5](https://github.com/MarZav-5)  
 
 
 ---
