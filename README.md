@@ -163,8 +163,8 @@ Dôkaz:
 
 ![All work](./Kalkulačka_percent/screenshots/jira/ss_Snake_Game_All_work_Jira.png)
 
----
-<hr style="border: 2px solid #999;">
+#### ---
+
 ## Použité nástroje a technológie
 
 - **Test management:** JIRA + Xray  
