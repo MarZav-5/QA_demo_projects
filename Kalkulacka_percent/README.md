@@ -101,7 +101,7 @@ Environment:
 
 Dôkaz:  
   
-(./screenshots/KALK_Bug_desatine_miesta.png
+(./screenshots/KALK_Bug_desatine_miesta.png)
 ```
 
 ---
