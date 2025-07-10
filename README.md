@@ -163,7 +163,7 @@ Dôkaz:
 
 ![All work](./Kalkulačka_percent/screenshots/jira/ss_Snake_Game_All_work_Jira.png)
 
----
+==============================
 
 ## Použité nástroje a technológie
 
