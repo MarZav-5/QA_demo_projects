@@ -64,6 +64,7 @@ Passed
 
 ![All work](./screenshots/jira/ss_WEB_All_work_Jira.png)  
 ![Test Execution](./screenshots/jira/ss_WEB_board_TExe_Jira.png)
+![Test case](./screenshots/jira/ss_WEB_TC03_Jira.png)
 
 ---
 
