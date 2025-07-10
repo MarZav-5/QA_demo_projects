@@ -13,7 +13,8 @@ Web bol pôvodne vytvorený ako pomôcka pre študentov na Vysokej škole múzic
 - **Zameranie:** funkčné testovanie webovej aplikácie
 - **Testovacie prípady:** 5 manuálnych testovacích prípadov
 - **Nájdené chyby:** žiadne – všetky testy prešli úspešne
-- **Použité nástroje:** JIRA / Xray, manuálne testovanie, Visual Studio Code, Netlify, GitHub
+- **Typ testovania:** Manuálne
+- **Použité nástroje:** JIRA / Xray, Visual Studio Code, Netlify, GitHub
 - **Testovacie prostredie:** MacOS Sierra, Firefox ESR
 - **Priložené súbory:**
   - [Testovacie prípady](./Web_Testovacie_Pripady.md)
