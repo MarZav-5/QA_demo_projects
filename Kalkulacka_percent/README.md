@@ -93,7 +93,7 @@ Kroky na reprodukciu:
   4. Stlačíme tlačidlo "Calculate"
 
 Navrhované riešenie:
-  - Výpočet je v kóde nastavený ako (part / whole) * 100, odporúčam doplniť funkciu toFixed(2).
+  - Odporúčam doplniť funkciu toFixed(2).
 
 Environment:
 
