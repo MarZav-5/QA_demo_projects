@@ -129,7 +129,7 @@ Webová verzia klasickej hry Snake s nasimulovanými chybami. Slúži ako cviče
 
 - [README projektu](./Snake_game/README.md)
 
-**Ukážka bud reportu**
+**Ukážka bug reportu**
 
 ```plaintext
 [BUG_TC04] – Hráč stratí všetky životy po kolízii s okrajom hernej plochy
