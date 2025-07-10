@@ -43,10 +43,10 @@
 **Popis:**  
 - Po strete hada s ktorýmkoľvek okrajom hracej plochy sa hráčovi ihneď odpočítajú všetky životy a hra sa končí.
 
-**Očakávané výsledok:**  
+**Očakávaný výsledok:**  
 - Hráč by mal stratiť 1 život
 
-**Skutočné výsledok:**  
+**Skutočný výsledok:**  
 - Hráčovi sa odpočítajú všetky životy a hra sa končí
 
 **Kroky na reprodukciu:**
@@ -78,10 +78,10 @@
 **Popis:**  
 - Had sa po strate života nevráti do svojej pôvodnej veľkosti 3 blokov a pokračuje ďalej v nadobudnutej veľkosti.
 
-**Očakávané výsledok:**  
+**Očakávaný výsledok:**  
 - Hráč stráca život a had sa vráti do pôvodnej veľkosti 3 blokov
 
-**Skutočné výsledok:**  
+**Skutočný výsledok:**  
 - Hráč stráca život, had ostáva v nadobudnutej veľkosti
 
 **Kroky na reprodukciu:**
@@ -107,10 +107,10 @@
 **Popis:**   
 - Jedlo pre hada sa niekedy zobrazí aj v rámci blokov jeho tela, čo by pri konzumácii spôsobilo stratu života
 
-**Očakávané výsledok:**  
+**Očakávaný výsledok:**  
 - Jedlo sa nikdy nezobrazí v rámci tela hada
 
-**Skutočné výsledok:**  
+**Skutočný výsledok:**  
 - Jedlo sa niekedy zobrazí v rámci tela hada
 
 **Kroky na reprodukciu:**
