@@ -165,15 +165,16 @@ Dôkaz:
 
 ---
 
-## Použité nástroje a technológie
+<h3 align="center"> Použité nástroje a technológie</h3>
 
-- **Test management:** JIRA + Xray
-- **Bug tracking:** Screenshots, video, komentáre
-- **Formát:** Markdown, manuálne testovanie
-- **Testovacie prostredie:** macOS Sierra, Firefox ESR
-- **Editácia kódu:** Visual Studio Code
+- **Test management:** JIRA + Xray  
+- **Bug tracking:** Screenshots, video, komentáre  
+- **Formát:** Markdown, manuálne testovanie  
+- **Testovacie prostredie:** macOS Sierra, Firefox ESR  
+- **Editácia kódu:** Visual Studio Code  
 
 ---
+
 
 ## Cieľ repozitára
 
