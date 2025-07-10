@@ -15,7 +15,7 @@ Tieto projekty demonštrujú môj praktický prístup k testovaniu a dôraz na s
 Webová aplikácia, ktorá umožňuje študentom po zadaní emailu zobraziť výsledky semestrálneho testu a stiahnuť jeho scan. Projekt pôvodne slúžil ako nástroj pre mojich študentov kurzu *Solfeggio* na Vysokej škole múzických umení, neskôr som ho adaptoval ako QA demoprojekt.
 
 - **Testovanie:** verifikácia emailov, reakcie systému na vstupy, funkčnosť sťahovania
-- **Testovacích prípadov:** 5
+- **Testovacie prípady:** 5
 - **Stav:** všetky testy prešli
 
 - [README projektu](./WEB_Výsledky_hodnotenia/README.md)
@@ -66,7 +66,7 @@ Passed
 Jednoduchá aplikácia na výpočet percenta. Vytvorená s úmyselnými chybami, ktoré som následne testoval a dokumentoval v rámci QA scenárov.
 
 - **Testovanie:** výpočtová logika, chybové vstupy, UI/UX správanie
-- **Testovacích prípadov:** 6
+- **Testovacie prípady:** 6
 - **Bug reporty:** 4
 
 - [README projektu](./Kalkulacka_percent/README.md)
@@ -124,7 +124,7 @@ Dôkaz:
 Webová verzia klasickej hry Snake s nasimulovanými chybami. Slúži ako cvičenie z testovania UI, kolízií, pohybu a reakcií systému. Obsahuje aj video dôkaz bugu.
 
 - **Testovanie:** logika hry, kolízie, vizuálna odozva
-- **Testovacích prípadov:** 6
+- **Testovacie prípady:** 6
 - **Bug reporty:** 5
 
 - [README projektu](./Snake_game/README.md)
