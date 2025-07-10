@@ -169,10 +169,12 @@ Dôkaz:
 ## Použité nástroje a technológie
 
 - **Test management:** JIRA + Xray  
-- **Bug tracking:** Screenshoty, video, komentáre  
-- **Formát:** Markdown, manuálne testovanie  
+- **Bug tracking:** Screenshoty, videozáznamy, komentáre  
+- **Dokumentácia:** Markdown (testovacie prípady, bug reporty)  
+- **Typ testovania:** Manuálne  
 - **Testovacie prostredie:** macOS Sierra, Firefox ESR  
-- **Editácia kódu:** Visual Studio Code  
+- **Editor kódu:** Visual Studio Code  
+- **Nasadenie webu:** Netlify
 
 ---
 
