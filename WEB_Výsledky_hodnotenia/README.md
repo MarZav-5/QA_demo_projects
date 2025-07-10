@@ -1,4 +1,4 @@
-# WEB_Vysledky_hodnotenia – QA Testing projekt
+# WEB Výsledky hodnotenia – QA Testing projekt
 
 Tento projekt demonštruje manuálne testovanie jednoduchej webovej aplikácie, ktorá umožňuje používateľom zobraziť výsledky semestrálneho testu po zadaní emailovej adresy a následne si stiahnuť scan svojho testu.
 
