@@ -32,7 +32,7 @@ Testovaná webová aplikácia bola dostupná na:
 ## Ukážka testovacieho prípadu
 
 ```plaintext
-estovací Prípad TC03 – Výpočet s nečíselnými vstupmi
+Testovací Prípad TC03 – Výpočet s nečíselnými vstupmi
 
 Súvisiaca BR: BR-3  
 Priorita:** Stredná  
