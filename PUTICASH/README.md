@@ -35,37 +35,39 @@ https://puticash.netlify.app/
 ## Ukážka testovacieho prípadu
 
 ```plaintext
-Testovací Prípad SM-03 – Zobrazenie trasy (čas + vzdialenosť)
+Testovací Prípad SM-09
+Názov: Reštrikcia API kľúča
 
-Súvisiaca BR: BR-3  
-Priorita: Vysoká  
+Súvisiaca BR: BR–06
+
+Priorita: Stredná
 
 Popis:
-- Po výbere baru sa na mape zobrazí trasa k prislúchajúcemu bankomatu (pešo) a v paneli metriky (čas, vzdialenosť).
+Overenie, že Google Directions API kľúč je správne obmedzený iba na demo doménu (Netlify). Pri spustení aplikácie na inej doméne alebo v lokálnom prostredí (localhost) prestane Directions API fungovať. Aplikácia zobrazí chybové hlásenie a automaticky použije fallback výpočet vzdialenosti a času (haversine + odhad).
+(Súvisiaci test: SM-04 – Fallback výpočet)
 
-PRE-REQ: 
-- Zoznam barov je načítaný
-- Directions API je dostupné (pozitívny scenár)
+PRE-REQ:
+- V Google Could Console je API kľuč Website restriction iba pre doménu Netlify
+- Aplikácia je spustená na inej/nepovolenej doméne, príp. cez lokálne prostredie (localhost).
 
-Data:  
-- Bar: „ľubovoľný“ s pripojeným ATM
+Test dáta:
+- aplikácia na nepovolenej doméne / localhost
 
 Kroky:
-1. Na úvodnom zozname klikni na bar.
-2. Po načítaní mapy over zobrazenie oboch markerov.
-3. Over vykreslenie trasy (polyline).
-4. Over zobrazenie metrík (čas v min., vzdialenosť v m/ km).
+1. Spusť aplikáciu na nepovolenej doméne
+2. Na úvodnom screene vyber ľubovoľný bar
+3. Na mapovom screene over načítanie Leaflet mapy
+4. Over zobrazenie chybovej hlášky v notice banneri (napr. Trasa API zlyhala…)
+5. Over, že Directions polyline nie je vykreslená na mape
+6. Over zobrazenie fallback výpočtu vzdialenosti (m/km) a času (min) v toolbare
 
 Očakávaný výsledok:
-- Mapa zobrazuje oba markery (bar a ATM).
-- Trasa je vykreslená (polyline).
-- Panel metrík zobrazuje čas a vzdialenosť (číselné hodnoty).
+- Aplikácia zobrazí chybové hlásenie v notice banneri (napr. Trasa Api zlyhala…)
+- Na mape Leaflet sa nezobrazí Directions polyline z Google API
+- Metriky v toolbare zobrazujú fallback výpočet (haversine + odhad času chôdze)
+- Skutočný výsledok: (doplniť počas testu)
 
-Skutočný výsledok:
-- Bude doplnené po exekúcii testu.
-
-Stav:
-Not Executed
+Stav: Not Executed
 ```
 
 ---
