@@ -267,7 +267,7 @@ Not Executed
 
 ---
 
-## Testovací Prípad SM-07
+## Testovací prípad SM-07
 
 **ID:** SM-07
 
@@ -320,7 +320,7 @@ Not Executed
 
 ---
 
-## Testovací Prípad SM-08
+## Testovací prípad SM-08
 
 **ID:** SM-08
 
@@ -364,7 +364,7 @@ Not Executed
 
 ---
 
-## Testovací Prípad SM-09
+## Testovací prípad SM-09
 
 **ID:** SM-09
 
