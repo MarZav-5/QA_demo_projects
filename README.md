@@ -64,7 +64,7 @@ Stav: Not Executed
 ```
 ---
 
-### WEB Výsledky hodnotenia
+# WEB Výsledky hodnotenia
 
 Webová aplikácia, ktorá umožňuje študentom po zadaní emailu zobraziť výsledky semestrálneho testu a stiahnuť jeho scan. Projekt pôvodne slúžil ako nástroj pre mojich študentov kurzu *Solfeggio* na Vysokej škole múzických umení, neskôr som ho adaptoval ako QA demoprojekt.
 
@@ -116,7 +116,7 @@ Passed
 
 ---
 
-### Kalkulačka percent
+# Kalkulačka percent
 
 Jednoduchá aplikácia na výpočet percenta. Vytvorená s úmyselnými chybami, ktoré som následne testoval a dokumentoval v rámci QA scenárov.
 
@@ -174,7 +174,7 @@ Dôkaz:
 
 ---
 
-### Snake Game
+# Snake Game
 
 Webová verzia klasickej hry Snake s nasimulovanými chybami. Slúži ako cvičenie z testovania UI, kolízií, pohybu a reakcií systému. Obsahuje aj video dôkaz bugu.
 
