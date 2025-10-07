@@ -21,8 +21,11 @@
 ## Testovací Prípad SM-01
 
 **ID:** SM-01
+
 **Názov:** Načítanie zoznamu barov
+
 **Súvisiaca BR:** BR–02
+
 **Priorita:** Vysoká
 
 **Popis:** Po spustení aplikácie sa zobrazí úvodný screen (#pickerScreen) s načitaným zoznamom barov na výber podľa bars.json
