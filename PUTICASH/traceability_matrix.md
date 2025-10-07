@@ -1,6 +1,6 @@
 # Traceability Matrix (BR + Smoke testy)
 
-| BR ID | Názov/Obsah požiadavky | Smoke test | Coverage |
+| BR ID | Názov/Obsah požiadavky | Smoke test | Pokrytie |
 |------|-------------------------|--------------------|----------------------|
 | **BR-01** | **Cieľ aplikácie** – nájsť najbližší ATM k baru a zobraziť trasu pešo. | SM-02, SM-03, SM-05 | Cieľ je pokrytý výberom baru→mapa, zobrazením trasy a deeplinkom do Google Maps. |
 | **BR-02** | **Zoznam barov** – prehľadný zoznam; kliknutím na bar sa otvorí mapa s trasou. | SM-01, SM-02, SM-06 | SM-01 validuje načítanie zoznamu; SM-02 prechod na mapu; SM-06 návrat späť na zoznam. |
