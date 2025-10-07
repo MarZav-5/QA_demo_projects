@@ -30,7 +30,9 @@ Súvisiaca BR: BR–04
 Priorita: Vysoká
 
 Popis: 
-V prípade, že Google Directions API nie je dostupné alebo vráti chybu (napr. kvôli obmedzeniam API kľúča alebo blokovaniu požiadaviek), aplikácia zobrazí notice banner s chybovou hláškou a vypočíta vzdialenosť + čas pomocou fallback algoritmu (haversine pre vzdialenosť, priemerná rýchlosť chôdze pre čas).
+V prípade, že Google Directions API nie je dostupné alebo vráti chybu (napr. kvôli obmedzeniam API kľúča
+alebo blokovaniu požiadaviek), aplikácia zobrazí notice banner s chybovou hláškou a vypočíta
+vzdialenosť + čas pomocou fallback algoritmu (haversine pre vzdialenosť, priemerná rýchlosť chôdze pre čas).
 
 PRE-REQ:
 - Vybraný ľubovoľný bar z úvodného screenu
