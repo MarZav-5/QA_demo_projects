@@ -21,6 +21,47 @@ Webová aplikácia, ktorá pomáha zákazníkom obľúbeného bratislavského po
 - **Testovacie prípady:** 9 – pokrývajú načítanie a výber barov, zobrazenie mapy s markermi, výpočet a fallback trasy, deeplink do Google Maps, návrat na zoznam barov, responzivitu a obmedzenia API kľúča
 - **Stav:** /testovanie v pláne/
 
+**Ukážka testovacieho prípadu**
+
+```plaintext
+Testovací prípad SM-04
+Názov: Fallback výpočet
+Súvisiaca BR: BR–04
+Priorita: Vysoká
+
+Popis: 
+V prípade, že Google Directions API nie je dostupné alebo vráti chybu (napr. kvôli obmedzeniam API kľúča alebo blokovaniu požiadaviek), aplikácia zobrazí notice banner s chybovou hláškou a vypočíta vzdialenosť + čas pomocou fallback algoritmu (haversine pre vzdialenosť, priemerná rýchlosť chôdze pre čas).
+
+PRE-REQ:
+- Vybraný ľubovoľný bar z úvodného screenu
+- Zobrazený mapový screen
+- Google Directions API nedostupné:
+  - DevTools → Network → Offline
+  - Pri lokálnom testovaní: odobrať localhost adresu vo Website restrictions (Google Cloud Console)
+
+Test dáta:
+
+URL: https://puticash.netlify.app/
+
+Kroky:
+1. Na úvodnom screene klikni na ľubovoľný bar
+2. Over zobrazenie Leaflet mapy na #mapScreen
+3. Over zobrazenie chybovej hlášky v notice banneri (napr. Trasa API zlyhala)
+4. Over vykreslenie 2 markerov – jeden pre bar, druhý pre ATM
+5. Over, že medzi markermi nie je vykreslená Directions polyline (trasa z API)
+6. Over zobrazenie fallback metrík v toolbare nad mapou: vzdielenosť v m/km (napr. 220 m) a čas v minútach (napr. 2 min)
+
+Očakávaný výsledok:
+- V notice banneri pod mapou sa zobrazí chybová hláška (napr. "Trasa API zlyhala…")
+- Medzi barom a ATM nie je Directions polyline z Google API
+- Na paneli nad mapou sú zobrazené fallback hodnoty (haversine + odhad času chôdze): vzdialenosť (m/km) a čas (min)
+- Skutočný výsledok: (doplniť počas testu)
+
+Stav: Not Executed
+
+```
+---
+
 ### WEB Výsledky hodnotenia
 
 Webová aplikácia, ktorá umožňuje študentom po zadaní emailu zobraziť výsledky semestrálneho testu a stiahnuť jeho scan. Projekt pôvodne slúžil ako nástroj pre mojich študentov kurzu *Solfeggio* na Vysokej škole múzických umení, neskôr som ho adaptoval ako QA demoprojekt.
