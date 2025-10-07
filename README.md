@@ -10,7 +10,18 @@ Tieto projekty demonštrujú môj praktický prístup k testovaniu a dôraz na s
 
 ## Prehľad projektov
 
-### 1. WEB Výsledky hodnotenia
+### PUTICA$H
+
+Webová aplikácia, ktorá pomáha zákazníkom obľúbeného bratislavského podniku rýchlo nájsť najbližší bankomat. Po výbere baru z úvodného zoznamu sa zobrazí mapa s markerom baru, markerom bankomatu a trasou chôdze vrátane odhadovaného času a vzdialenosti.Aplikácia podporuje fallback výpočet pri zlyhaní Directions API a obsahuje základné QA testy (smoke testovacie prípady, traceability matrix, bug reporty...) ako súčasť demo projektu.
+
+- [README projektu](./PUTICASH/README.md)
+
+- **Testovanie:** správne načítanie a zobrazovanie dát z JSON súborov, integráciu s Google Directions API, spracovanie fallback výpočtov pri zlyhaní API, ako aj UI/UX prvky vrátane responzivity a navigácie medzi obrazovkami
+
+- **Testovacie prípady:** 9 – pokrývajú načítanie a výber barov, zobrazenie mapy s markermi, výpočet a fallback trasy, deeplink do Google Maps, návrat na zoznam barov, responzivitu a obmedzenia API kľúča
+- **Stav:** /testovanie v pláne/
+
+### WEB Výsledky hodnotenia
 
 Webová aplikácia, ktorá umožňuje študentom po zadaní emailu zobraziť výsledky semestrálneho testu a stiahnuť jeho scan. Projekt pôvodne slúžil ako nástroj pre mojich študentov kurzu *Solfeggio* na Vysokej škole múzických umení, neskôr som ho adaptoval ako QA demoprojekt.
 
@@ -62,7 +73,7 @@ Passed
 
 ---
 
-### 2. Kalkulačka percent
+### Kalkulačka percent
 
 Jednoduchá aplikácia na výpočet percenta. Vytvorená s úmyselnými chybami, ktoré som následne testoval a dokumentoval v rámci QA scenárov.
 
@@ -120,7 +131,7 @@ Dôkaz:
 
 ---
 
-### 3. Snake Game
+### Snake Game
 
 Webová verzia klasickej hry Snake s nasimulovanými chybami. Slúži ako cvičenie z testovania UI, kolízií, pohybu a reakcií systému. Obsahuje aj video dôkaz bugu.
 
