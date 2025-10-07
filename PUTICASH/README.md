@@ -16,12 +16,13 @@ Aplikácia vznikla ako reakcia na dlhodobý problém nemožnosti platiť kartou 
 
 - **Použité nástroje:** Google Cloud Console, Visual Studio Code, Netlify, GitHub
 
-- **Testovacie prostredie:** macOS Sierra, Chrome / Firefox, localhost
+- **Testovacie prostredie:** macOS Sierra, Chrome / Firefox, localhost, Android
 
 - **Priložené súbory:**
   - [Business Requirements](./business_requirements_list.md)
-  - [Smoke Test Suite](./smoke_test_suite.md)
   - [Traceability Matrix](./traceability_matrix.md)
+  - [Smoke Test Suite](./smoke_test_suite.md)
+  - [Bug report](./bug_report.md)
 
 ---
 
@@ -96,15 +97,6 @@ Stav: Not Executed
 6. **Bezpečnosť a dáta**  
    - API kľúč Google Maps je obmedzený len na danú doménu.  
    
-
-
----
-
-## Odkazy
-
-- [Business Requirements (Markdown)](./business_requirements_list.md)
-- [Smoke Test Suite (Markdown)](./smoke_test_suite.md)
-- [Traceability Matrix (Markdown)](./traceability_matrix.md)
 
 ---
 
