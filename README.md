@@ -16,7 +16,7 @@ Webová aplikácia, ktorá pomáha zákazníkom obľúbeného bratislavského po
 
 - [README projektu](./PUTICASH/README.md)
 
-- **Testovanie:** správne načítanie a zobrazovanie dát z JSON súborov, integráciu s Google Directions API, spracovanie fallback výpočtov pri zlyhaní API, ako aj UI/UX prvky vrátane responzivity a navigácie medzi obrazovkami
+- **Testovanie:** správne načítanie a zobrazovanie dát z JSON súborov, integráciu s Google Directions API, spracovanie fallback výpočtov pri zlyhaní API, UI/UX prvky vrátane responzivity a navigácie medzi obrazovkami
 
 - **Testovacie prípady:** 9 – pokrývajú načítanie a výber barov, zobrazenie mapy s markermi, výpočet a fallback trasy, deeplink do Google Maps, návrat na zoznam barov, responzivitu a obmedzenia API kľúča
 - **Stav:** /testovanie v pláne/
