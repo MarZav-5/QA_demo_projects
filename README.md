@@ -227,7 +227,7 @@ Dôkaz:
 - **Bug tracking:** Screenshoty, videozáznamy, komentáre  
 - **Dokumentácia:** Markdown (testovacie prípady, bug reporty)  
 - **Typ testovania:** Manuálne  
-- **Testovacie prostredie:** macOS Sierra, Firefox ESR  
+- **Testovacie prostredie:** macOS Sierra, Chrome, Firefox ESR, localhost
 - **Editor kódu:** Visual Studio Code  
 - **Nasadenie webu:** Netlify
 
