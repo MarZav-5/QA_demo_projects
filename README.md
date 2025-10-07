@@ -42,7 +42,6 @@ PRE-REQ:
   - Pri lokálnom testovaní: odobrať localhost adresu vo Website restrictions (Google Cloud Console)
 
 Test dáta:
-
 URL: https://puticash.netlify.app/
 
 Kroky:
