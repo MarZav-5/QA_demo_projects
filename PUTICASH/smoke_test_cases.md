@@ -20,10 +20,9 @@
 
 ## Testovací Prípad SM-01
 
+**ID:** SM-01
 **Názov:** Načítanie zoznamu barov
-
 **Súvisiaca BR:** BR–02
-
 **Priorita:** Vysoká
 
 **Popis:** Po spustení aplikácie sa zobrazí úvodný screen (#pickerScreen) s načitaným zoznamom barov na výber podľa bars.json
@@ -56,10 +55,9 @@ Not Executed
 
 ## Testovací prípad SM-02
 
+**ID:** SM-02
 **Názov:** Výber baru a otvorenie mapy
-
 **Súvisiaca BR:** BR-01, BR–02, BR-03
-
 **Priorita:** Vysoká
 
 **Popis:** Používateľ vyberie bar zo zoznamu na úvodnom screene (#pickerScreen). Aplikácia má prepnúť na mapový screen (#mapScreen) 
@@ -94,10 +92,9 @@ Not Executed
 
 ## Testovací prípad SM-03
 
+**ID:** SM-03
 **Názov:** Zobrazenie trasy
-
 **Súvisiaca BR:** BR=01, BR-03
-
 **Priorita:** Vysoká
 
 **Popis:** Na mapovom screene sa vykreslí pešia trasa medzi vybraným barom a prislúchajúcim ATM. Používateľ v paneli nad mapou vidí metriky vzdialenosť a čas. 
@@ -134,10 +131,9 @@ Not Executed
 
 ## Testovací prípad SM-04
 
+**ID:** SM-04
 **Názov:** Fallback výpočet
-
 **Súvisiaca BR:** BR–04
-
 **Priorita:** Vysoká
 
 **Popis:** V prípade, že Google Directions API nie je dostupné alebo vráti chybu (napr. kvôli obmedzeniam API kľúča alebo blokovaniu požiadaviek), 
@@ -180,10 +176,9 @@ Not Executed
 
 ## Testovací prípad SM-05
 
+**ID:** SM-05
 **Názov:** Deep link do Google Maps
-
 **Súvisiaca BR:** BR–01, BR–03
-
 **Priorita:** Vysoká
 
 **Popis:** Na mapovom screene v toolbare má používateľ možnosť otvoriť trasu v Google Maps cez deeplink. 
@@ -219,13 +214,10 @@ Not Executed
 
 ## Testovací prípad SM-06
 
-
+**ID:** SM-05
 **Názov:** Návrat na zoznam barov
-
 **Súvisiaca BR:** BR-02
-
 **Priorita:** Stredná – Vysoká
-
 
 **Popis:** Po zobrazení mapového screenu sa používateľ môže vrátiť na úvodný screen so zoznamom barov pomocou tlačidla „← späť“. 
 Mapový screen sa skryje a opäť je viditeľný zoznam barov.
@@ -259,12 +251,10 @@ Not Executed
 
 ## Testovací Prípad SM-07
 
+**ID:** SM-07
 **Názov:** Responzivita
-
 **Súvisiaca BR:** BR–07
-
 **Priorita:** Stredná
-
 
 **Popis:** Overenie, že aplikácia je čitateľná a ovládateľná v mobilných a tabletových rozlíšeniach. 
 UI prvky sa správne prispôsobujú šírke displeja a obsah zostáva dostupný bez horizontálneho scrollu.
@@ -311,11 +301,9 @@ Not Executed
 
 ## Testovací Prípad SM-08
 
-
+**ID:** SM-08
 **Názov:** Chyba pri načítaní dát
-
 **Súvisiaca BR:** BR–04
-
 **Priorita:** Vysoká
 
 **Popis:** Ak sa nepodarí načítať dáta (bars.json/atms.json), aplikácia zobrazí jasnú chybovú hlášku a nespustí sa výber barov.
@@ -354,10 +342,9 @@ Not Executed
 
 ## Testovací Prípad SM-09
 
+**ID:** SM-09
 **Názov:** Reštrikcia API kľúča
-
 **Súvisiaca BR:** BR–06
-
 **Priorita:** Stredná 
 
 
