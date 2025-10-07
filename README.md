@@ -57,7 +57,8 @@ Očakávaný výsledok:
 - V notice banneri pod mapou sa zobrazí chybová hláška (napr. "Trasa API zlyhala…")
 - Medzi barom a ATM nie je Directions polyline z Google API
 - Na paneli nad mapou sú zobrazené fallback hodnoty (haversine + odhad času chôdze): vzdialenosť (m/km) a čas (min)
-- Skutočný výsledok: (doplniť počas testu)
+
+Skutočný výsledok: (doplniť počas testu)
 
 Stav: Not Executed
 
