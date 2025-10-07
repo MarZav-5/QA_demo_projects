@@ -22,6 +22,7 @@ Aplikácia vznikla ako reakcia na dlhodobý problém nemožnosti platiť kartou 
   - [Business Requirements](./business_requirements_list.md)
   - [Traceability Matrix](./traceability_matrix.md)
   - [Smoke Test Suite](./smoke_test_suite.md)
+  - [Testovacie prípady](./smoke_test_cases.md)
   - [Bug report](./bug_report.md)
 
 ---
