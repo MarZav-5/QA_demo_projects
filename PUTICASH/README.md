@@ -67,7 +67,8 @@ Očakávaný výsledok:
 - Aplikácia zobrazí chybové hlásenie v notice banneri (napr. Trasa Api zlyhala…)
 - Na mape Leaflet sa nezobrazí Directions polyline z Google API
 - Metriky v toolbare zobrazujú fallback výpočet (haversine + odhad času chôdze)
-- Skutočný výsledok: (doplniť počas testu)
+
+Skutočný výsledok: (doplniť počas testu)
 
 Stav: Not Executed
 ```
