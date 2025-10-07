@@ -25,6 +25,8 @@ Webová aplikácia, ktorá pomáha zákazníkom obľúbeného bratislavského po
 
 ```plaintext
 Testovací prípad SM-04
+
+ID: SM-04
 Názov: Fallback výpočet
 Súvisiaca BR: BR–04
 Priorita: Vysoká
