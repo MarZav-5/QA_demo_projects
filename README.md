@@ -81,33 +81,33 @@ Webová aplikácia, ktorá umožňuje študentom po zadaní emailu zobraziť vý
 **Ukážka testovacieho prípadu**
 
 ```plaintext
-Testovací Prípad TC03 – Neplatný formát emailu zobrazí chybové hlásenie
-
-Súvisiaca BR: BR-1  
-Priorita: Vysoká  
+Testovací Prípad TC01 – Verifikácia existujúceho emailu – zobrazenie výsledkov
+Súvisiaca BR: BR-1
+Priorita: Vysoká
 
 Popis:
-Po zadaní emailovej adresy v neplatnom formáte sa zobrazí chybové hlásenie
-
+Po zadaní emailovej adresy, existujúcej v databáze sa zobrazia semestrálne výsledky študenta na ďalšej sekcii stránky, prerolovaním smerom dole.
 PRE-REQ:
-Stránka je načítaná
+- Email existuje v databáze
+- Stránka je načítaná
 
-Data:  
-abc@.com
+Data:
+- student1@example.com
+- student2@example.com
 
-Kroky:  
-1. Zadaj do email inputu "ab@.com"
-2. Klikni na button "Zobraz výsledky"  
+Kroky:
+1. Zadaj existujúci email "student1@example.com"
+2. Klikni na button "Zobraz výsledky"
+3. Postup opakuj s druhým emailom "student2@example.com"
 
-Očakávaný výsledok:  
-Zobrazí sa chybové hlásenie "Nesprávny email. Skús znova."  
+Očakávaný výsledok:
+- Dáta sa zobrazia na ďalšej sekcii stránky po prerolovaní smerom dole.
 
 Skutočný výsledok:
-Zobrazil sa chybové hlásenie "Nesprávny email. Skús znova."  
+- Dáta sú zobrazené na ďalšej sekcii stránky po prerolovaní smerom dole.
 
 Stav:
-Passed  
-
+Passed
 ```
 
 **Ukážka práce v JIRA/Xray:**
