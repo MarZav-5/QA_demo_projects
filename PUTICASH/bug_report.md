@@ -3,7 +3,7 @@
 
 # Bug report
 
-
+- [BUG_SM-02 Responzivita](#BUG_SM-02)
 - [BUG_SM-07 Responzivita](#BUG_SM-07)
 
 ---
