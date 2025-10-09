@@ -394,7 +394,7 @@ Not Executed
 -  Aplikácia zobrazí chybové hlásenie o zlyhaní načítania dát.
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+- 
 
 **Stav:**
 Not Executed
