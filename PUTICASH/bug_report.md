@@ -14,12 +14,13 @@
 **ID:** BUG_SM07  
 **Súvisiaci Test Case:** SM-07 (Responzivita)  
 **Priorita:** Stredná  
-**Závažnosť:** Medium (UI usability issue)  
+**Závažnosť:** Stredná   
 **Status:** Open  
 
 ---
 
-**Názov:** Tlačidlo „Otvoriť v Google Maps“ preteká za hranicu kontajnera pri šírke 601–671px  
+**Názov:**
+Tlačidlo „Otvoriť v Google Maps“ preteká za hranicu kontajnera pri šírke 601–671px  
 
 **Popis:**  
 Pri testovaní responzivity zobrazenia mapy baru "Vajnorská" sa na jeho mapovom screene zistilo, že v mobilnom rozlíšení pri šírke medzi 601px a 671px tlačidlo „Otvoriť v Google Maps“ vychádza mimo pravý okraj kontajnera Leaflet mapy. Tlačidlo sa vracia do správnej polohy pri šírke ≥683px. 
@@ -47,8 +48,7 @@ Pri testovaní responzivity zobrazenia mapy baru "Vajnorská" sa na jeho mapovom
 
 **Environment:**  
 - OS: macOS Sierra 10.12.6
-- Browser: Chrome 103.0.5060.134
-- Firefox 115.28.0esr
+- Browser: Chrome 103.0.5060.134, Firefox 115.28.0esr
 - Device Toolbar (mobilná simulácia)  
 - URL: https://puticash.netlify.app/ 
 
@@ -63,5 +63,4 @@ Pri testovaní responzivity zobrazenia mapy baru "Vajnorská" sa na jeho mapovom
 - Pridať CSS pravidlo pre kritický breakpoint (napr. `@media (max-width: 671px) { ... }`) a zabezpečiť, aby tlačidlo ostalo v rámci kontajnera.  
 
 ---
-
-**Time stamp:** 09/10/25 10:50   
+  
