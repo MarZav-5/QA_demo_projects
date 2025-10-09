@@ -37,12 +37,12 @@ https://puticash.netlify.app/
 ## Ukážka testovacieho prípadu
 
 ```plaintext
-Testovací Prípad SM-09
+Testovací prípad SM-09
+ID: SM-09
 Názov: Reštrikcia API kľúča
-
 Súvisiaca BR: BR–06
+Priorita: Stredná 
 
-Priorita: Stredná
 
 Popis:
 Overenie, že Google Directions API kľúč je správne obmedzený iba na demo doménu (Netlify).
@@ -51,28 +51,37 @@ Aplikácia zobrazí chybové hlásenie a automaticky použije fallback výpočet
 (Súvisiaci test: SM-04 – Fallback výpočet)
 
 PRE-REQ:
-- V Google Could Console je API kľuč Website restriction iba pre doménu Netlify
-- Aplikácia je spustená na inej/nepovolenej doméne, príp. cez lokálne prostredie (localhost).
+-  V Google Could Console je API kľuč Website restriction iba pre doménu Netlify 
+-  Aplikácia je spustená na inej/nepovolenej doméne, príp. cez lokálne prostredie (localhost).
 
 Test dáta:
-- aplikácia na nepovolenej doméne / localhost
+-  aplikácia na nepovolenej doméne / localhost
 
 Kroky:
+
 1. Spusť aplikáciu na nepovolenej doméne
-2. Na úvodnom screene vyber ľubovoľný bar
+2. Na úvodnom screene vyber ľubovoľný bar 
 3. Na mapovom screene over načítanie Leaflet mapy
 4. Over zobrazenie chybovej hlášky v notice banneri (napr. Trasa API zlyhala…)
-5. Over, že Directions polyline nie je vykreslená na mape
-6. Over zobrazenie fallback výpočtu vzdialenosti (m/km) a času (min) v toolbare
+5. Over, že Directions polyline nie je vykreslená na mape 
+6. Over zobrazenie fallback výpočtu vzdialenosti (m/km) a času (min) v toolbare 
 
 Očakávaný výsledok:
-- Aplikácia zobrazí chybové hlásenie v notice banneri (napr. Trasa Api zlyhala…)
-- Na mape Leaflet sa nezobrazí Directions polyline z Google API
-- Metriky v toolbare zobrazujú fallback výpočet (haversine + odhad času chôdze)
+-  Aplikácia zobrazí chybové hlásenie v notice banneri (napr. Trasa Api zlyhala…)
+-  Na mape Leaflet sa nezobrazí Directions polyline z Google API
+-  Metriky v toolbare zobrazujú fallback výpočet (haversine + odhad času chôdze)
 
-Skutočný výsledok: (doplniť počas testu)
+Skutočný výsledok:
+- V notice banneri sa zobrazuje chybové hlásenie "Trasa API zlyhala, použiem odhad vzdialenosti."
+- Directions polyline sa nezobrazila
+- Metriky v toolbare ukazujú približné hodnoty z fallback
 
-Stav: Not Executed
+Stav:
+Passed
+
+Time stamp:
+09/10/25 10:53
+
 ```
 ---
 
