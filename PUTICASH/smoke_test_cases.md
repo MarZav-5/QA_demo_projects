@@ -54,7 +54,7 @@
 **Stav:**
 Passed
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 09:55
 
 
@@ -107,7 +107,7 @@ Failed
 **Súvisiaci BUG report:**
 [BUG_SM02] 
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 09:59
 
 ---
@@ -159,7 +159,7 @@ Failed
 **Súvisiaci BUG Report:**
 [BUG_SM02] 
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 10:20
 
 ---
@@ -210,7 +210,7 @@ priemerná rýchlosť chôdze pre čas).
 **Stav:**
 Passed
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 10:34
 
 ---
@@ -256,7 +256,7 @@ Po kliknutí sa v novej karte otvorí Google Maps s nastaveným origin (bar), de
 **Stav:**
 Passed
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 10:39
 
 ---
@@ -300,7 +300,7 @@ Mapový screen sa skryje a opäť je viditeľný zoznam barov.
 **Stav:**
 Passed
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 10:42
 
 ---
@@ -361,7 +361,7 @@ Failed
 **Súvisiaci BUG report:**
 [BUG_SM07] 
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 10:50
 
 ---
@@ -408,7 +408,7 @@ Failed
 **Stav:**
 Passed
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 10:48
 
 ---
@@ -463,5 +463,5 @@ Aplikácia zobrazí chybové hlásenie a automaticky použije fallback výpočet
 **Stav:**
 Passed
 
-**Timestamp:**
+**Time stamp:**
 09/10/25 10:53
