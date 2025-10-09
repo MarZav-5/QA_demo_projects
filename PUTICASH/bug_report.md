@@ -103,9 +103,13 @@ Pri testovaní responzivity zobrazenia mapy baru "Vajnorská" sa na jeho mapovom
 # BUG_001x Mapa neodstraňuje predchádzajúce markery po zmene výberu baru    
 
 **ID:** BUG_001x
+
 **Súvisiaci Test Case:** SM-02 (Výber baru a otvorenie mapy), SM-03 (Zobrazenie trasy)  
+
 **Priorita:** Nízka
+
 **Závažnosť:** Nízka (UI / Map rendering)
+
 **Status:** Open  
 
 **Názov:**  
