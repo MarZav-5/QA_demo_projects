@@ -81,23 +81,31 @@ a zobraziť Leaflet mapu s markerom vybraného baru a jeho prislúchajúceho ban
 -  Ľubovoľný bar zo zoznamu
 
 **Kroky:**
-1. Na úvodnom screene klikni na ľubovoľný bar
+1. Na úvodnom screene klikni na ľuobovľný bar
 2. Over zobrazenie Leaflet mapy
 3. Over vykreslenie 2 markerov, jeden pre bar, druhý pre ATM
    -  marker pre bar má súradnice z bars.json
-   -  marker pre ATM má súradnice z atms.json 
+   -  marker pre ATM má súradnice z atms.json
+4. Opakuj postup od kroku 1 pri každom bare
 
 **Očakávaný výsledok:**
 -  Po kliknutí na bar sa zobrazí Leaflet mapa
 -  Na mape sa nachádzajú 2 markery – jeden označuje vybraný bar, druhý prislúchajúci bankomat (podľa dát v JSON)
 
 **Skutočný výsledok:**
-- Po kliknutí na bar sa vykreslila Leaflet mapa
-- Na mape sa zobrazili 2 marekery – bar (modrý pin) a ATM (zelený terč)
-- Vykreslenie marekerov sa zhoduje s dátami v bars.json a atms.json
+- Po kliknutí na všetky bar sa vykreslila Leaflet mapa
+- Na mape sa zobrazili 2 markery – bar (modrý pin) a ATM (zelený terč)
+- Vykreslenie markerov sa zhoduje s dátami v bars.json a atms.json
+
+- Po kliknutí na bar "Trnavská c." sa na Leaflet mape vykreslí chybná poloha ATM:
+   - notice bar zobrazí chybovú hlášku "Trasa API zlyhala - použijem odhad vzdialenosti"
+   - vrchný toolbar zobrazuje chybnú vzdialenosť v km a časový odhad v min. 
 
 **Stav:**
-Passed
+Failed
+
+**Súvisiaci BUG Report:**
+[BUG_SM02] 
 
 **Timestamp:**
 09/10/25 09:59
