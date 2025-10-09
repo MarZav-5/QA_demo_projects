@@ -107,7 +107,7 @@ vychádza mimo pravý okraj kontajnera Leaflet mapy. Tlačidlo sa vracia do spr�
 Kroky na reprodukciu:  
 1. Otvor aplikáciu: https://puticash.netlify.app/  
 2. Aktivuj Developer Tools → Device Toolbar  
-3. Nastav šírku zobrazenia na hodnotu medzi **601px a 671px**
+3. Nastav šírku zobrazenia na hodnotu medzi 601px a 671px
 4. Vyber bar "Vajnorská" a prejdi na mapový screen
 5. Sleduj tlačidlo „Otvoriť v Google Maps“ v hornej časti nad mapou
 
