@@ -351,10 +351,15 @@ UI prvky sa správne prispôsobujú šírke displeja a obsah zostáva dostupný 
 
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+- Bar "Vajnorská": v mobilnom rozlíšení na mapovom screene, medzi rozmermi šírky 601px – 671px preteká tlačidlo "Otvoriť v Google Maps" za hranicu okraju    
+  kontajnera Leaflet mapy. Tlačidlo sa vráti do ideálnej pozície pri rozmere širky 683px.
+- Na ostatných mapách je UI v mobilných a tabletových rozlíšeniach správne prispôsobené
 
 **Stav:**
-Not Executed
+Failed
+
+**Timestamp:**
+09/10/25 10:50
 
 ---
 
