@@ -257,7 +257,7 @@ Po kliknutí sa v novej karte otvorí Google Maps s nastaveným origin (bar), de
 Passed
 
 **Timestamp:**
-09/10/25 10:40
+09/10/25 10:39
 
 ---
 
@@ -294,10 +294,14 @@ Mapový screen sa skryje a opäť je viditeľný zoznam barov.
 
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+- Po kliku na tlačidlo sa aplikácia vrátila na zoznam barov
+- Zobrazil sa funkčný screen zoznamu barov 
 
 **Stav:**
-Not Executed
+Passed
+
+**Timestamp:**
+09/10/25 10:42
 
 ---
 
@@ -368,10 +372,9 @@ Not Executed
 
 **PRE-REQ:**
 -  Simulovaná nedostupnosť dát
-  
    -  Možnosti:
-   -  DevTools → Network → Offline
-   -  (Lokálne prostredie) Zmena cesty k JSON (aby vzniklo 404)
+      -  DevTools → Network → Offline
+      -  (Lokálne prostredie) Zmena cesty k JSON (aby vzniklo 404)
 
 **Test dáta:**
 -  URL: https://puticash.netlify.app/
