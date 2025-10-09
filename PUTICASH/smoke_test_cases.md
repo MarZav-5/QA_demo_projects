@@ -118,7 +118,7 @@ Failed
 
 **Názov:** Zobrazenie trasy
 
-**Súvisiaca BR:** BR=01, BR-03
+**Súvisiaca BR:** BR-01, BR-03
 
 **Priorita:** Vysoká
 
