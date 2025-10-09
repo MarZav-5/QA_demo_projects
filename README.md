@@ -24,44 +24,53 @@ Webová aplikácia, ktorá pomáha zákazníkom obľúbeného bratislavského po
 **Ukážka testovacieho prípadu**
 
 ```plaintext
-Testovací prípad SM-04
+Testovací prípad SM-03
 
-ID: SM-04
-Názov: Fallback výpočet
-Súvisiaca BR: BR–04
+ID: SM-03
+Názov: Zobrazenie trasy
+Súvisiaca BR: BR-01, BR-03
 Priorita: Vysoká
 
-Popis: 
-V prípade, že Google Directions API nie je dostupné alebo vráti chybu (napr. kvôli obmedzeniam API kľúča
-alebo blokovaniu požiadaviek), aplikácia zobrazí notice banner s chybovou hláškou a vypočíta
-vzdialenosť + čas pomocou fallback algoritmu (haversine pre vzdialenosť, priemerná rýchlosť chôdze pre čas).
+Popis:
+Na mapovom screene sa vykreslí pešia trasa medzi vybraným barom a prislúchajúcim ATM. Používateľ v paneli nad mapou vidí metriky vzdialenosť a čas. 
 
 PRE-REQ:
-- Vybraný ľubovoľný bar z úvodného screenu
-- Zobrazený mapový screen
-- Google Directions API nedostupné:
-  - DevTools → Network → Offline
-  - Pri lokálnom testovaní: odobrať localhost adresu vo Website restrictions (Google Cloud Console)
+-  Postupne vybraný každý bar z úvodného screenu
+-  Mapový screen s Leaflet mapou je zobrazený
 
 Test dáta:
-- URL: https://puticash.netlify.app/
+-  URL: https://puticash.netlify.app/
 
 Kroky:
-1. Na úvodnom screene klikni na ľubovoľný bar
-2. Over zobrazenie Leaflet mapy na #mapScreen
-3. Over zobrazenie chybovej hlášky v notice banneri (napr. Trasa API zlyhala)
-4. Over vykreslenie 2 markerov – jeden pre bar, druhý pre ATM
-5. Over, že medzi markermi nie je vykreslená Directions polyline (trasa z API)
-6. Over zobrazenie fallback metrík v toolbare nad mapou: vzdielenosť v m/km (napr. 220 m) a čas v minútach (napr. 2 min)
+1. Over, že sa na #mapScreen načítala Leaflet mapa
+2. Skontroluj vykreslenie 2 markerov – jeden pre bar, druhý pre ATM
+3. Skontroluj, či je medzi markerom baru a ATM vykreslená polyline trasa
+4. Over, že v toolbare nad mapou sú zobrazené správne metriky:
+    – vzdialenosť v m/km (napr. 220 m)
+    - čas v minútach (napr. 2 min)
 
 Očakávaný výsledok:
-- V notice banneri pod mapou sa zobrazí chybová hláška (napr. "Trasa API zlyhala…")
-- Medzi barom a ATM nie je Directions polyline z Google API
-- Na paneli nad mapou sú zobrazené fallback hodnoty (haversine + odhad času chôdze): vzdialenosť (m/km) a čas (min)
+-  Na mape sa vykreslí polyline trasa medzi 2 markermi – barom a atm
+-  Na toolbar paneli nad mapou sú zobrazené metriky: vzdialenosť (m/km) a čas (min)
 
-Skutočný výsledok: (doplniť počas testu)
+Poznámka:
+-  V prípade nedostupnosti Google Directions API, viď SM-04 "Fallback výpočet"
 
-Stav: Not Executed
+Skutočný výsledok:
+- Na mape každého baru sa vykreslila polyline trasa medzi 2 markermi, okrem baru "Trnavská c."
+- Na toolbar paneli nad mapu sa zobrazili metriky vzdialenosti a času.
+- Po kliknutí na bar "Trnavská c." sa na Leaflet mape vykreslí chybná poloha ATM:
+   - notice bar zobrazí chybovú hlášku "Trasa API zlyhala - použijem odhad vzdialenosti"
+   - vrchný toolbar zobrazuje chybnú vzdialenosť v km a časový odhad v min. 
+
+Stav:
+Failed
+
+Súvisiaci BUG Report:
+[BUG_SM-02 Výber baru a otvorenie mapy]
+
+Time stamp:
+09/10/25 10:20
 
 ```
 ---
