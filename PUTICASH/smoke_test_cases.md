@@ -394,10 +394,14 @@ Not Executed
 -  Aplikácia zobrazí chybové hlásenie o zlyhaní načítania dát.
 
 **Skutočný výsledok:**
-- 
+- Pri zmene cesty k JSON súborom v app.js sa na úvodnom screene zoznam barov nezobrazil
+- Na úvodom screene zobrazilo chybové hlásenie "Chyba pri načítaní dát."
 
 **Stav:**
-Not Executed
+Passed
+
+**Timestamp:**
+09/10/25 10:48
 
 ---
 
@@ -444,7 +448,12 @@ Aplikácia zobrazí chybové hlásenie a automaticky použije fallback výpočet
 -  Metriky v toolbare zobrazujú fallback výpočet (haversine + odhad času chôdze)
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+- V notice banneri sa zobrazuje chybové hlásenie "Trasa API zlyhala, použiem odhad vzdialenosti."
+- Directions polyline sa nezobrazila
+- Metriky v toolbare ukazujú približné hodnoty z fallback
 
 **Stav:**
-Not Executed
+Passed
+
+**Timestamp:**
+09/10/25 10:53
