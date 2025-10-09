@@ -27,10 +27,6 @@
 - OS: MacOs Sierra 10.12.6
 - Prehliadač: Firefox Browser 15.24.0esr (64-bit)
   
-**Príloha [Jira / Xray]:**
-  
-  ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC02_Jira.png)
-
 ---
 
 ## [BUG_TC04] – Hráč stratí všetky životy po kolízii s okrajom hernej plochy
@@ -61,10 +57,6 @@
 
 **Dôkaz:**
   [Video MOV](./screenshots/Snake_Game_BUG_TC04.mov)
-
-**Príloha [Jira / Xray]:**
-  
-  ![Screenshot Jira](./screenshots/jira/ss_Snake_Game_BUG_TC04_Jira.png)
 
 ---
 
