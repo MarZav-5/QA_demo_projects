@@ -9,7 +9,7 @@
 ---
 ---
 
-# BUG_SM-02 Výber baru a otvorenie mapy
+#BUG_SM-02 Výber baru a otvorenie mapy
 
 **ID:** BUG_SM02  
 **Súvisiaci Test Case:** SM-02 (Výber baru a otvorenie mapy), SM-03 (Zobrazenie trasy)  
