@@ -21,7 +21,7 @@ Webová aplikácia, ktorá pomáha zákazníkom obľúbeného bratislavského po
 - **Testovacie prípady:** 9 – pokrývajú načítanie a výber barov, zobrazenie mapy s markermi, výpočet a fallback trasy, deeplink do Google Maps, návrat na zoznam barov, responzivitu a obmedzenia API kľúča
 - **Stav:** /testovanie v pláne/
 
----
+
 **Ukážka testovacieho prípadu**
 
 ```plaintext
