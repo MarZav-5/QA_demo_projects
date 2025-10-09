@@ -18,7 +18,7 @@
 **Status:** Open  
 
 **Názov:** 
-Chybná poloha ATM a nesprávne metriky pri bare „Trnavská c.“  
+Chybná poloha ATM a nesprávne metriky pri bare "Trnavská c.“  
 
 **Popis:**  
 Pri výbere baru „Trnavská c.“ sa Leaflet mapa síce načíta a zobrazuje 2 markery (bar a ATM), ale marker ATM sa nachádza na nesprávnej polohe.  
@@ -99,4 +99,44 @@ Pri testovaní responzivity zobrazenia mapy baru "Vajnorská" sa na jeho mapovom
 - Pridať CSS pravidlo pre kritický breakpoint (napr. `@media (max-width: 671px) { ... }`) a zabezpečiť, aby tlačidlo ostalo v rámci kontajnera.  
 
 ---
-  
+# BUG_001x Mapa neodstraňuje predchádzajúce markery po zmene výberu baru    
+
+**ID:** BUG_001x
+**Súvisiaci Test Case:** SM-02 (Výber baru a otvorenie mapy), SM-03 (Zobrazenie trasy)  
+**Priorita:** Nízka
+**Závažnosť:** Nízka (UI / Map rendering)
+**Status:** Open  
+
+**Názov:**  
+Mapa ponecháva markery z predchádzajúcich výberov barov počas jednej session  
+
+**Popis:**  
+Pri opakovanom výbere barov v rámci jednej session sa na mape zobrazia nové markery baru a ATM, avšak markery z predchádzajúcich výberov ostávajú na mape.  
+Problém je viditeľný najmä pri oddialení (zoom-out), kedy sú markery z predchádzajúcich výberov stále prítomné.  
+
+**Kroky na reprodukciu:**  
+1. Otvor aplikáciu: https://puticash.netlify.app/  
+2. Na úvodnom screene vyber ľubovoľný bar  
+3. Sleduj mapu s vykreslenými markermi baru a ATM  
+4. Klikni na tlačidlo "Späť" a vyber iný bar  
+5. Znova sleduj mapu – zobrazia sa nové markery baru a ATM  
+6. Použi zoom-out a over, či sú stále viditeľné markery z predchádzajúceho výberu  
+7. Opakuj postup s viacerými barmi  
+
+**Očakávaný výsledok:**  
+- Po každom výbere baru sú na mape zobrazené len aktuálne markery baru a ATM.  
+- Markery z predchádzajúcich výberov sa už nezobrazujú.  
+
+**Skutočný výsledok:**  
+- Pri oddialení mapy sú viditeľné aj markery z predchádzajúcich výberov barov a ATM.  
+- Tento stav pretrváva počas celej session.  
+
+**Environment:**  
+- OS: macOS Sierra 10.12.6  
+- Browser: Chrome 103.0.5060.134, Firefox 115.28.0esr  
+- URL: https://puticash.netlify.app/  
+
+**Screenshot:**  
+![Screenshot](./screenshots/Puticash_BUG_001x.png) 
+
+---  
