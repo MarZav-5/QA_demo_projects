@@ -12,7 +12,7 @@ Aplikácia vznikla ako reakcia na dlhodobý problém nemožnosti platiť kartou 
 
 - **Smoke suite:** 9 manuálnych testovacích prípadov
 
-- **Nájdené chyby:** 3 – Chybná poloha ATM, tlačidlo mimo kontajnera, markery zostávajú na mape
+- **Nájdené bugy:** 3 – Funkčný (Chybná poloha ATM), responzivita (tlačidlo mimo kontajnera), UI/map rendering (markery zostávajú na mape)
 
 - **Použité nástroje:** Google Cloud Console, Visual Studio Code, Netlify, GitHub
 
