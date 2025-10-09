@@ -21,6 +21,7 @@ Webová aplikácia, ktorá pomáha zákazníkom obľúbeného bratislavského po
 - **Testovacie prípady:** 9 – pokrývajú načítanie a výber barov, zobrazenie mapy s markermi, výpočet a fallback trasy, deeplink do Google Maps, návrat na zoznam barov, responzivitu a obmedzenia API kľúča
 - **Stav:** /testovanie v pláne/
 
+---
 **Ukážka testovacieho prípadu**
 
 ```plaintext
@@ -53,15 +54,15 @@ Očakávaný výsledok:
 -  Na mape sa vykreslí polyline trasa medzi 2 markermi – barom a atm
 -  Na toolbar paneli nad mapou sú zobrazené metriky: vzdialenosť (m/km) a čas (min)
 
-Poznámka:
--  V prípade nedostupnosti Google Directions API, viď SM-04 "Fallback výpočet"
-
 Skutočný výsledok:
 - Na mape každého baru sa vykreslila polyline trasa medzi 2 markermi, okrem baru "Trnavská c."
 - Na toolbar paneli nad mapu sa zobrazili metriky vzdialenosti a času.
 - Po kliknutí na bar "Trnavská c." sa na Leaflet mape vykreslí chybná poloha ATM:
    - notice bar zobrazí chybovú hlášku "Trasa API zlyhala - použijem odhad vzdialenosti"
    - vrchný toolbar zobrazuje chybnú vzdialenosť v km a časový odhad v min. 
+
+Poznámka:
+-  V prípade nedostupnosti Google Directions API, viď SM-04 "Fallback výpočet"
 
 Stav:
 Failed
