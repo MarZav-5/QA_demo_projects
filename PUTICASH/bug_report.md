@@ -17,16 +17,12 @@
 **Závažnosť:** Vysoká (nesprávne vykreslenie trasy a metrík, znižuje funkčnosť aplikácie)  
 **Status:** Open  
 
----
-
 **Názov:** 
 Chybná poloha ATM a nesprávne metriky pri bare „Trnavská c.“  
 
 **Popis:**  
 Pri výbere baru „Trnavská c.“ sa Leaflet mapa síce načíta a zobrazuje 2 markery (bar a ATM), ale marker ATM sa nachádza na nesprávnej polohe.  
 V notice banneri sa zároveň zobrazí chybová hláška o zlyhaní Directions API a v hornom toolbare sú zobrazené nesprávne (extrémne) hodnoty vzdialenosti (4448.0 km) a času (59307 min).  
-
----
 
 **Kroky na reprodukciu:**  
 1. Otvor aplikáciu: https://puticash.netlify.app/  
@@ -35,8 +31,6 @@ V notice banneri sa zároveň zobrazí chybová hláška o zlyhaní Directions A
    - Over pozíciu ATM markeru.  
    - Sleduj notice banner pod mapou.  
    - Sleduj toolbar nad mapou (vzdialenosť a čas).  
-
----
 
 **Očakávaný výsledok:**  
 - Na mape sa zobrazia dva markery (bar a ATM) podľa súradníc v `bars.json` a `atms.json`.  
@@ -48,19 +42,13 @@ V notice banneri sa zároveň zobrazí chybová hláška o zlyhaní Directions A
 - Notice banner zobrazuje hlášku "Trasa API zlyhala – použijem odhad vzdialenosti"
 - Toolbar nad mapou zobrazuje chybné, extrémne metriky (vzdialenosť 4448.0 km, čas 59307 min).  
 
----
-
 **Environment:**  
 - OS: macOS Sierra 10.12.6
 - Browser: Chrome 103.0.5060.134, Firefox 115.28.0esr
 - URL: https://puticash.netlify.app/  
 
----
-
 **Screenshot / Video:**  
  ![Screenshot](./screenshots/Puticash_BUG_SM02.png) 
-
----
 
 **Návrh na fix:**  
 - Skontrolovať korektnosť párovania bar–ATM v `bars.json` a `atms.json`.  
