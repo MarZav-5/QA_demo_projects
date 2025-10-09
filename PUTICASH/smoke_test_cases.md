@@ -126,7 +126,7 @@ Failed
 (Pre fallback prípad nedostupnosti Google Directions API, viď SM–O4 "Fallback výpočet")
 
 **PRE-REQ:**
--  Vybraný ľubovoľný bar z úvodného screenu
+-  Postupne vybraný každý bar z úvodného screenu
 -  Mapový screen s Leaflet mapou je zobrazený
 
 **Test dáta:**
@@ -140,17 +140,27 @@ Failed
 
 **Očakávaný výsledok:**
 -  Na mape sa vykreslí polyline trasa medzi 2 markermi – barom a atm
--  Na paneli nad mapou sú zobrazené metriky: vzdialenosť (m/km) a čas (min)
+-  Na toolbar paneli nad mapou sú zobrazené metriky: vzdialenosť (m/km) a čas (min)
 
 Poznámka:
 -  V prípade nedostupnosti Google Directions API, viď SM-04 "Fallback výpočet"
 
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+- Na mape každého baru sa vykreslila polyline trasa medzi 2 markermi, okrem baru "Trnavská c."
+- Na toolbar paneli nad mapu sa zobrazili metriky vzdialenosti a času.
+- Po kliknutí na bar "Trnavská c." sa na Leaflet mape vykreslí chybná poloha ATM:
+   - notice bar zobrazí chybovú hlášku "Trasa API zlyhala - použijem odhad vzdialenosti"
+   - vrchný toolbar zobrazuje chybnú vzdialenosť v km a časový odhad v min. 
 
 **Stav:**
-Not Executed
+Failed
+
+**Súvisiaci BUG Report:**
+[BUG_SM02] 
+
+**Timestamp:**
+09/10/25 10:20
 
 ---
 
@@ -171,10 +181,7 @@ priemerná rýchlosť chôdze pre čas).
 **PRE-REQ:**
 -  Vybraný ľubovoľný bar z úvodného screenu
 -  Zobrazený mapový screen
--  Google Directions API nedostupné:
-  
-   -  DevTools → Network → Offline
-   
+-  Google Directions API nedostupné: 
    -  Pri lokálnom testovaní: odobrať localhost adresu vo Website restrictions (Google Cloud Console)
 
 **Test dáta:**
@@ -191,14 +198,20 @@ priemerná rýchlosť chôdze pre čas).
 **Očakávaný výsledok:**
 - V notice banneri pod mapou sa zobrazí chybová hláška (napr. "Trasa API zlyhala…")
 -  Medzi barom a ATM nie je Directions polyline z Google API
--  Na paneli nad mapou sú zobrazené fallback hodnoty (haversine + odhad času chôdze): vzdialenosť (m/km) a čas (min)
+-  Na toolbar paneli nad mapou sa zobrazia fallback hodnoty (haversine + odhad času chôdze): vzdialenosť (m/km) a čas (min)
 
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+- Počas reštrikcie API kľuča z localhost adresy výpočet trasy pomocou Google Directions API zlyhal
+- V notice banneri sa zobrazilo chybové hlásenie: "Trasa API zlyhala, použiem odhad vzdialenosti."
+- Na toolbar paneli nad mapou sú zobrazené fallback hodnoty
+- Absencia Directions polyline medzi markermi
 
 **Stav:**
-Not Executed
+Passed
+
+**Timestamp:**
+09/10/25 10:34
 
 ---
 
@@ -210,7 +223,7 @@ Not Executed
 
 **Súvisiaca BR:** BR–01, BR–03
 
-**Priorita:** Vysoká
+**Priorita:** Stredná
 
 **Popis:** Na mapovom screene v toolbare má používateľ možnosť otvoriť trasu v Google Maps cez deeplink. 
 Po kliknutí sa v novej karte otvorí Google Maps s nastaveným origin (bar), destination (ATM) a pešou navigáciou.
@@ -225,21 +238,26 @@ Po kliknutí sa v novej karte otvorí Google Maps s nastaveným origin (bar), de
 **Kroky:**
 
 1. Na úvodnom screene klikni na ľubovoľný bar
-2. V toolbare nad mapou klikni na tlačidlo „Otvoriť v Google Maps“
+2. V toolbare nad mapou klikni na tlačidlo "Otvoriť v Google Maps“
 3. Over, že sa otvorí nová karta s Google Maps
 4. Over, že URL obsahuje origin a destination súradnice z aktuálne vybraných bodov (bar, ATM)
 5. Over, že je nastavený walking režim (pešo)
 
 **Očakávaný výsledok:**
--  Otvorí sa nová karta Google Maps s trasou od bar ku ATM
--  V URL sú vyplnené správne parametre (origin, destination, travelmode=walking)
+-  Otvorí sa nová karta Google Maps s trasou od baru ku ATM
+-  V URL sú vyplnené správne parametre (origin, destination)
 -  Trasa v Google Maps zodpovedá vybraným bodom v aplikácii
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+- Po kliknutí na tlačidlo "Otvoriť v Google Maps" sa otvorí nová karta Google Maps s trasou od baru ku ATM
+- V URL sa nachádzajú dáta koordinantov (origin, destination)
+- Trasa v Google Maps zodpovedá vybraným bodom, je správne nastavený walking mode.
 
 **Stav:**
-Not Executed
+Passed
+
+**Timestamp:**
+09/10/25 10:40
 
 ---
 
