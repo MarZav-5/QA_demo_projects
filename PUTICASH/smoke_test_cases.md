@@ -49,10 +49,14 @@
 
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+– Počet barov a ich názvy na úvodom screene súhlasí s dátami v bars.json
 
 **Stav:**
-Not Executed
+Passed
+
+**Timestamp:**
+09/10/25 09:55
+
 
 ---
 
@@ -84,15 +88,19 @@ a zobraziť Leaflet mapu s markerom vybraného baru a jeho prislúchajúceho ban
    -  marker pre ATM má súradnice z atms.json 
 
 **Očakávaný výsledok:**
-
 -  Po kliknutí na bar sa zobrazí Leaflet mapa
 -  Na mape sa nachádzajú 2 markery – jeden označuje vybraný bar, druhý prislúchajúci bankomat (podľa dát v JSON)
 
 **Skutočný výsledok:**
-*(doplniť počas testu)*
+- Po kliknutí na bar sa vykreslila Leaflet mapa
+- Na mape sa zobrazili 2 marekery – bar (modrý pin) a ATM (zelený terč)
+- Vykreslenie marekerov sa zhoduje s dátami v bars.json a atms.json
 
 **Stav:**
-Not Executed
+Passed
+
+**Timestamp:**
+09/10/25 09:59
 
 ---
 
