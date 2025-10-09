@@ -3,7 +3,7 @@
 
 # Bug report
 
-- [BUG_SM-02 Responzivita](#BUG_SM-02)
+- [BUG_SM-02 Výber baru a otvorenie mapy](#BUG_SM-02)
 - [BUG_SM-07 Responzivita](#BUG_SM-07)
 
 ---
@@ -12,7 +12,7 @@
 # BUG_SM-02 Výber baru a otvorenie mapy
 
 **ID:** BUG_SM02  
-**Súvisiaci Test Case:** SM-02 (Výber baru a otvorenie mapy)  
+**Súvisiaci Test Case:** SM-02 (Výber baru a otvorenie mapy), SM-03 (Zobrazenie trasy)  
 **Priorita:** Vysoká  
 **Závažnosť:** Vysoká (nesprávne vykreslenie trasy a metrík, znižuje funkčnosť aplikácie)  
 **Status:** Open  
