@@ -5,7 +5,7 @@
 
 - [BUG_SM-02 Výber baru a otvorenie mapy](#bug_sm-02-výber-baru-a-otvorenie-mapy)
 - [BUG_SM-07 Responzivita](#bug_sm-07-responzivita)
-- [BUG_001x Mapa neodstraňuje predchádzajúce markery po zmene výberu baru](#bug_001x_mapa_neodstraňuje_predchádzajúce_markery_po_zmene_výberu_baru)
+- [BUG_001x Mapa neodstraňuje predchádzajúce markery po zmene výberu baru](#bug_001x-mapa-neodstraňuje-predchádzajúce-markery-po-zmene-výberu-baru)
 
 ---
 ---
