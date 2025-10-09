@@ -9,7 +9,7 @@
 ---
 ---
 
-# BUG Report – SM-02 Výber baru a otvorenie mapy
+# BUG_SM-02 Výber baru a otvorenie mapy
 
 **ID:** BUG_SM02  
 **Súvisiaci Test Case:** SM-02 (Výber baru a otvorenie mapy)  
@@ -58,13 +58,13 @@ V notice banneri sa zároveň zobrazí chybová hláška o zlyhaní Directions A
 ---
 
 **Screenshot / Video:**  
-*(vložiť dôkaz – screenshot mapy so zlou polohou ATM a notice bannerom)*  
+ ![Screenshot](./screenshots/Puticash_BUG_SM02.png) 
 
 ---
 
 **Návrh na fix:**  
 - Skontrolovať korektnosť párovania bar–ATM v `bars.json` a `atms.json`.  
-- Overiť spracovanie súradníc pri výbere baru „Trnavská c.“  
+- Overiť spracovanie a správnosť súradníc pri výbere baru „Trnavská c.“  
 - Overiť, či Directions API request obsahuje správne parametre a či fallback správne určuje ATM.  
 
 ---
