@@ -45,7 +45,9 @@ Súvisiaca BR: BR–06
 Priorita: Stredná
 
 Popis:
-Overenie, že Google Directions API kľúč je správne obmedzený iba na demo doménu (Netlify). Pri spustení aplikácie na inej doméne alebo v lokálnom prostredí (localhost) prestane Directions API fungovať. Aplikácia zobrazí chybové hlásenie a automaticky použije fallback výpočet vzdialenosti a času (haversine + odhad).
+Overenie, že Google Directions API kľúč je správne obmedzený iba na demo doménu (Netlify).
+Pri spustení aplikácie na inej doméne alebo v lokálnom prostredí (localhost) prestane Directions API fungovať.
+Aplikácia zobrazí chybové hlásenie a automaticky použije fallback výpočet vzdialenosti a času (haversine + odhad).
 (Súvisiaci test: SM-04 – Fallback výpočet)
 
 PRE-REQ:
@@ -89,7 +91,9 @@ Názov:
 Tlačidlo „Otvoriť v Google Maps“ preteká za hranicu kontajnera pri šírke 601–671px  
 
 Popis: 
-Pri testovaní responzivity zobrazenia mapy baru "Vajnorská" sa na jeho mapovom screene zistilo, že v mobilnom rozlíšení pri šírke medzi 601px a 671px tlačidlo „Otvoriť v Google Maps“ vychádza mimo pravý okraj kontajnera Leaflet mapy. Tlačidlo sa vracia do správnej polohy pri šírke ≥683px. 
+Pri testovaní responzivity zobrazenia mapy baru "Vajnorská" sa na jeho mapovom screene zistilo,
+že v mobilnom rozlíšení pri šírke medzi 601px a 671px tlačidlo „Otvoriť v Google Maps“
+vychádza mimo pravý okraj kontajnera Leaflet mapy. Tlačidlo sa vracia do správnej polohy pri šírke ≥683px. 
 
 Kroky na reprodukciu:  
 1. Otvor aplikáciu: https://puticash.netlify.app/  
@@ -116,7 +120,8 @@ Screenshot:
  ![Screenshot](./screenshots/Puticash_BUG_SM07.png) 
 
 Návrh na fix:  
-- Pridať CSS pravidlo pre kritický breakpoint (napr. `@media (max-width: 671px) { ... }`) a zabezpečiť, aby tlačidlo ostalo v rámci kontajnera.  
+- Pridať CSS pravidlo pre kritický breakpoint (napr. `@media (max-width: 671px) { ... }`)
+  a zabezpečiť, aby tlačidlo ostalo v rámci kontajnera.  
 ```
 ---
 
