@@ -105,7 +105,10 @@ a zobraziť Leaflet mapu s markerom vybraného baru a jeho prislúchajúceho ban
 Failed
 
 **Súvisiaci BUG report:**
-[BUG_SM02] 
+
+[BUG_SM-02 Výber baru a otvorenie mapy](./PUTICASH/bug_report.md#bug_sm-02-výber-baru-a-otvorenie-mapy)
+
+[BUG_001x Mapa neodstraňuje predchádzajúce markery po zmene výberu baru](./PUTICASH/bug_report.md#bug_001x-mapa-neodstraňuje-predchádzajúce-markery-po-zmene-výberu-baru)
 
 **Time stamp:**
 09/10/25 09:59
