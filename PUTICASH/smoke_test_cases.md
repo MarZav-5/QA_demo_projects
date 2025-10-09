@@ -154,12 +154,15 @@ Poznámka:
    - vrchný toolbar zobrazuje chybnú vzdialenosť v km a časový odhad v min. 
 
 **Stav:**
+
 Failed
 
 **Súvisiaci BUG Report:**
+
 [BUG_SM02] 
 
 **Time stamp:**
+
 09/10/25 10:20
 
 ---
