@@ -1,10 +1,10 @@
 # QA Demo Projects – Portfólio manuálneho testovania
 
-Vitajte v mojom repozitári s ukážkovými QA projektmi, ktoré som vytvoril ako súčasť môjho záujmu o oblasť softvérového testovania. Každý projekt vznikol ako samostatné cvičenie v manuálnom testovaní – od návrhu testovacích prípadov až po ich exekúciu a reportovanie chýb v JIRA/Xray.
+Vitajte v mojom repozitári s ukážkovými QA projektmi, ktoré som vytvoril ako súčasť môjho záujmu o oblasť softvérového testovania. Každý projekt vznikol ako samostatné cvičenie v manuálnom testovaní – od definovania business požiadaviek, cez návrh a spustenie testovacích prípadov, až po evidenciu bug reportov.
 
-Tieto projekty demonštrujú môj praktický prístup k testovaniu a dôraz na systematickosť, dokumentáciu a kontext. Niektoré aplikácie vznikli pôvodne ako reálne nástroje na praktické využitie, iné ako cielené cvičenia v oblasti QA.
+Tieto projekty demonštrujú môj praktický prístup k testovaniu a dôraz na systematickosť, dokumentáciu a kontext. Obsahuje niekoľko webových aplikácií, ktoré som vytvoril s pomocou ChatGPT a podľa potreby ďalej upravoval vo Visual Studio Code. Pri tvorbe som nechal GPT zakomponovať do kódu náhodné chyby, ktoré som následne objavil pri testovaní. 
 
-**Každý projekt obsahuje kompletnú dokumentáciu vo forme samostatných súborov s testovacími prípadmi a bug reportami vo formáte Markdown, doplnený o dôkazový materiál (screenshoty, prípadne video).**
+**Projekty obsahujú dokumentáciu vo forme samostatných súborov vo formáte Markdown, doplnený o dôkazový materiál (screenshoty, prípadne video). Niektoré projekty som spracoval aj v nástrojoch v Jira / Xray s cieľom simulácie reálneho prostredia**
 
 ---
 
