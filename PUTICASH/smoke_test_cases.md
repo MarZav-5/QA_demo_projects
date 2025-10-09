@@ -106,9 +106,9 @@ Failed
 
 **Súvisiaci BUG report:**
 
-[BUG_SM-02 Výber baru a otvorenie mapy](./PUTICASH/bug_report.md#bug_sm-02-výber-baru-a-otvorenie-mapy)
+[BUG_SM-02 Výber baru a otvorenie mapy](./bug_report.md#bug_sm-02-výber-baru-a-otvorenie-mapy)
 
-[BUG_001x Mapa neodstraňuje predchádzajúce markery po zmene výberu baru](./PUTICASH/bug_report.md#bug_001x-mapa-neodstraňuje-predchádzajúce-markery-po-zmene-výberu-baru)
+[BUG_001x Mapa neodstraňuje predchádzajúce markery po zmene výberu baru](./bug_report.md#bug_001x-mapa-neodstraňuje-predchádzajúce-markery-po-zmene-výberu-baru)
 
 **Time stamp:**
 09/10/25 09:59
@@ -162,7 +162,7 @@ Failed
 
 **Súvisiaci BUG Report:**
 
-[BUG_SM02] 
+[BUG_SM-02 Výber baru a otvorenie mapy](./bug_report.md#bug_sm-02-výber-baru-a-otvorenie-mapy) 
 
 **Time stamp:**
 
@@ -365,7 +365,7 @@ UI prvky sa správne prispôsobujú šírke displeja a obsah zostáva dostupný 
 Failed
 
 **Súvisiaci BUG report:**
-[BUG_SM07] 
+[BUG_SM-07 Responzivita](./bug_report.md#bug_sm-07-responzivita) 
 
 **Time stamp:**
 09/10/25 10:50
