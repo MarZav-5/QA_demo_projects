@@ -104,7 +104,7 @@ a zobraziť Leaflet mapu s markerom vybraného baru a jeho prislúchajúceho ban
 **Stav:**
 Failed
 
-**Súvisiaci BUG Report:**
+**Súvisiaci BUG report:**
 [BUG_SM02] 
 
 **Timestamp:**
@@ -357,6 +357,9 @@ UI prvky sa správne prispôsobujú šírke displeja a obsah zostáva dostupný 
 
 **Stav:**
 Failed
+
+**Súvisiaci BUG report:**
+[BUG_SM07] 
 
 **Timestamp:**
 09/10/25 10:50
