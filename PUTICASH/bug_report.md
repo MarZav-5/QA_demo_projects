@@ -55,7 +55,7 @@ Pri testovaní responzivity zobrazenia mapy baru "Vajnorská" sa na jeho mapovom
 ---
 
 **Screenshot:**  
-(./screenshots/Puticash_BUG_SM07.png) 
+ ![Screenshot](./screenshots/Puticash_BUG_SM07.png) 
 
 ---
 
