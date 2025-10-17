@@ -1,0 +1,11 @@
+# Netlify lokálna konfigurácia
+.netlify/
+
+# Node dependencies
+node_modules/
+
+# Lokálne tajomstvá
+.env
+
+# OS cache
+.DS_Store
