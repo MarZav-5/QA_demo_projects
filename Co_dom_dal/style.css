@@ -1,0 +1,461 @@
+/* === premenné === */
+:root {
+  --fg: #1a1a1a;
+  --muted: #5f6669;
+  --err: #b33434;
+
+  --paper-w: clamp(320px, 70vw, 700px);
+  --paper-h: clamp(230px, 50vw, 500px);
+  /* --paper-w: 700px;
+  --paper-h: 500px; */
+  --paper-pad: clamp(12px, 2vw, 22px);
+  --line: 1.6;
+  --paper-y: 0%;
+}
+
+/* reset & base */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--fg);
+  font: 16px/var(--line) "Special Elite", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: #d9cfb3;
+}
+
+/* pozadie */
+.stage {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("./bckgrnd_desktop_test.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* papier */
+.paper {
+  outline: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(-50% + var(--paper-y)));
+  width: var(--paper-w);
+  height: var(--paper-h);
+  display: grid;
+  place-items: center;
+}
+
+/* vnútro papiera */
+.sheet {
+  /* outline: auto; */
+  width: 100%;
+  height: 100%;
+  padding: var(--paper-pad);
+  position: relative;
+}
+
+/* vrstvy (screeny) */
+.view {
+  position: absolute;
+  inset: 0;
+  padding: clamp(12px, 2vw, 20px);
+  overflow: hidden;
+  /* 1. screen bez scrollu */
+  opacity: 1;
+  transition: opacity .28s ease;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.paper.switching .view {
+  pointer-events: none
+}
+
+/* prepínacie animácie */
+@keyframes wipe-in {
+  from {
+    clip-path: inset(100% 0 0 0)
+  }
+
+  to {
+    clip-path: inset(0)
+  }
+}
+
+@keyframes wipe-out {
+  from {
+    clip-path: inset(0)
+  }
+
+  to {
+    clip-path: inset(100% 0 0 0)
+  }
+}
+
+.view--form.wiping-out {
+  animation: wipe-out .42s ease forwards;
+}
+
+.view--recipe.wiping-in {
+  animation: wipe-in .42s .05s ease forwards;
+}
+
+/* typografia */
+h1,
+h2,
+h3 {
+  margin: .2rem 0 .6rem;
+  letter-spacing: .3px
+}
+
+h1 {
+  font-size: clamp(28px, 3.8vw, 44px)
+}
+
+h2 {
+  font-size: clamp(20px, 2.4vw, 28px)
+}
+
+h3 {
+  font-size: clamp(18px, 2vw, 22px);
+  color: var(--muted)
+}
+
+#result h2 small {
+  font-size: .8em;
+  color: #666
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* === 1. SCREEN – centrovanie + posunutý nadpis + stabilný layout === */
+.view--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding-top: clamp(28px, 7vh, 72px);
+  /* nadpis nižšie */
+  padding-bottom: 45px;
+  /* bezpečný spodok pre tlačidlo + error */
+}
+
+.view--form header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 1.4rem;
+}
+
+/* karta drží formulár uprostred */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* inputy POD SEBOU — fixná šírka kontajnera (nekolíše) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .6rem;
+  width: 320px;
+  /* pevná šírka grídu, aby nič „nerástlo“ */
+  margin: 0 auto;
+}
+
+/* UNDERLINE inputy – kratšie, centrované, písanie na stred */
+input {
+  width: 160px;
+  /* kratšia čiara */
+  margin: 0 auto;
+  text-align: center;
+  /* písanie na stred */
+  padding: .6rem .2rem .45rem;
+  border: none;
+  border-bottom: 2px solid #2a2a2a;
+  background: transparent;
+  color: var(--fg);
+  outline: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-bottom-color: #000;
+}
+
+input::placeholder {
+  color: #7a7a7a;
+  opacity: .9;
+  text-align: center;
+}
+
+/* tlačidlo a status – status POD tlačidlom, so vzdialenosťou a rezervou výšky */
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  gap: .45rem;
+  width: 320px;
+  /* aby šírka „zostavy“ ladila s gridom */
+}
+
+button {
+  border: 1px solid #0d0d0d;
+  border-radius: 8px;
+  padding: .7rem 1.4rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.primary {
+  background: linear-gradient(180deg, #ffe38a, #ffd24a);
+  box-shadow: 0 2px 0 #b38a1a, inset 0 1px 0 #fff0b6;
+}
+
+.secondary {
+  background: linear-gradient(180deg, #e9eef4, #d9e3ee);
+  box-shadow: 0 2px 0 #9aa6b2, inset 0 1px 0 #ffffffaa;
+}
+
+/* stavová/errorová správa – nižšie od tlačidla a bez layout shiftu */
+.status {
+  display: block;
+  min-height: 1.3em;
+  /* rezervuje miesto, nič neskáče */
+  margin-top: .65rem;
+  /* väčší odstup od tlačidla */
+  font-size: .94rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.bad {
+  color: var(--err);
+  text-shadow: 0 .35px 0 rgba(179, 52, 52, .25);
+  font-size: .92rem;
+}
+
+/* === 2. SCREEN – recept: stĺpec so šírkou a zalamovaním === */
+.view--recipe {
+  outline: auto;
+  position: absolute;
+  overflow: auto;
+  display: block;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+#result {
+  max-width: min(68ch, 84%);
+  margin: 0 auto;
+  padding: 5px 0 18px;
+  /* 8px top avoids heading touching the top, 28px bottom keeps text off the bottom edge */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+#result h2,
+#result h3 {
+  text-align: center;
+  margin-top: .6rem;
+}
+
+#result ul.list,
+#result ol.list {
+  list-style-position: outside;
+  /* bežné odrážky mimo textu */
+  padding-left: 1.2rem;
+  /* vizuálny okraj vnútri stĺpca */
+  margin: .4rem auto;
+}
+
+#result .list li {
+  margin: .25rem 0;
+}
+
+/* tlačidlo pod receptom ostane viditeľné a na stred */
+/* sticky akcie dole – full width + stred */
+.view--recipe .actions {
+  position: static;
+  /* už nie sticky ani absolute */
+  display: flex;
+  justify-content: center;
+  /* button na stred */
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  /* priestor nad buttonom */
+  padding-bottom: 12px;
+  /* trochu vzduchu od spodku listu */
+}
+
+/* pre istotu – samotný button bude centrovateľný */
+.view--recipe .actions button {
+  display: inline-flex;
+  margin: 0;
+  /* nech ho nič neposúva */
+}
+
+/* === Loader overlay (panvica v strede) === */
+.loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(255, 255, 255, .22), rgba(255, 255, 255, .12));
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.wok {
+  position: relative;
+  width: 240px;
+  height: 170px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, .25));
+}
+
+.wok-svg {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-origin: 118px 110px;
+  animation: wok-tilt 1.2s ease-in-out infinite;
+}
+
+@keyframes wok-tilt {
+  0% {
+    transform: rotate(-7deg)
+  }
+
+  50% {
+    transform: rotate(6deg)
+  }
+
+  100% {
+    transform: rotate(-7deg)
+  }
+}
+
+/* ingrediencie v loaderi */
+.chunk {
+  position: absolute;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: chunkFly 1.4s var(--delay, 0s) cubic-bezier(.22, .61, .36, 1) infinite;
+}
+
+@keyframes chunkFly {
+  0% {
+    transform: translate(calc(-50% + 0px), 0) rotate(0);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  45% {
+    transform: translate(calc(-50% + var(--dx)), -70px) rotate(18deg);
+  }
+
+  70% {
+    transform: translate(calc(-50% + calc(var(--dx)*.7)), -18px) rotate(-12deg);
+  }
+
+  100% {
+    transform: translate(calc(-50% + 0px), 0) rotate(0);
+    opacity: 0;
+  }
+}
+
+/* tvary ingrediencií */
+.c1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #ff7c7c 45%, #c43434 46% 100%);
+  border: 2px solid #2a2a2a;
+}
+
+.c2 {
+  width: 24px;
+  height: 10px;
+  border-radius: 10px/8px;
+  background: #c02626;
+  border: 2px solid #2a2a2a;
+  transform-origin: right center;
+}
+
+.c3 {
+  width: 22px;
+  height: 16px;
+  background: #f0e3c8;
+  border: 2px solid #2a2a2a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.c4 {
+  width: 12px;
+  height: 12px;
+  background: #e67a17;
+  border: 2px solid #2a2a2a;
+}
+
+.c5 {
+  width: 28px;
+  height: 10px;
+  background: #2f7d3d;
+  border: 2px solid #2a2a2a;
+  border-radius: 16px;
+  transform: rotate(-18deg);
+}
+
+.c6 {
+  width: 10px;
+  height: 10px;
+  background: #3f9b3a;
+  border: 2px solid #2a2a2a;
+  border-radius: 50%;
+}
+
+/* responzívne dolaďovačky */
+/* @media (max-width:1023px) {
+  .paper {
+    width: min(92vw, 740px);
+    height: clamp(560px, 88vh, 920px);
+    top: 52%;
+    transform: translate(-50%, calc(-52% + var(--paper-y)));
+  }
+} */
