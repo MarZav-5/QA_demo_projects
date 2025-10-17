@@ -1,1 +1,79 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Recepty – 5 ingrediencií</title>
+
+  <!-- Typewriter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="paper">
+      <div class="sheet">
+
+        <!-- Loader overlay (NOVÝ WOK LOADER) -->
+        <div id="loader" class="loader hidden" aria-live="polite" aria-label="Pripravujem recept">
+          <div class="wok">
+            <!-- panvica -->
+            <svg class="wok-svg" viewBox="0 0 240 160" aria-hidden="true">
+              <!-- misa panvice -->
+              <ellipse cx="118" cy="110" rx="92" ry="26" fill="#3b3b3b"></ellipse>
+              <path d="M26,110c0,24 41,42 92,42s92-18 92-42" fill="#2b2b2b"></path>
+              <!-- rúčka -->
+              <path d="M198 104 C 232 78, 236 78, 236 90 
+                       C 236 98, 232 102, 214 114" 
+                    fill="none" stroke="#2b2b2b" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+
+            <!-- lietajúce ingrediencie -->
+            <div class="chunk c1" style="--dx:-70px; --delay:0s;"></div>   <!-- paradajka -->
+            <div class="chunk c2" style="--dx:-30px; --delay:.12s;"></div> <!-- chilli -->
+            <div class="chunk c3" style="--dx: 20px; --delay:.24s;"></div> <!-- šampiňón -->
+            <div class="chunk c4" style="--dx: 60px; --delay:.36s;"></div> <!-- mrkva kocka -->
+            <div class="chunk c5" style="--dx:-50px; --delay:.48s;"></div> <!-- rukola -->
+            <div class="chunk c6" style="--dx: 40px; --delay:.60s;"></div> <!-- hrášok -->
+          </div>
+        </div>
+
+        <!-- FORM VIEW -->
+        <div class="view view--form" id="view-form">
+          <header>
+            <h1>ČO DOM DAL</h1>
+            <p class="muted">
+              Zadaj max. 4 ingrediencie a ideme na to!
+            </p>
+          </header>
+
+          <section class="card">
+            <div class="grid">
+              <input id="i1" placeholder="1" autocomplete="off" />
+              <input id="i2" placeholder="2" autocomplete="off" />
+              <input id="i3" placeholder="3" autocomplete="off" />
+              <input id="i4" placeholder="4" autocomplete="off" />
+            </div>
+            <div class="actions">
+              <button id="gen" class="primary">Vygeneruj recept</button>
+              <span id="status" class="status" aria-live="polite"></span>
+            </div>
+          </section>
+        </div>
+
+        <!-- RECIPE VIEW -->
+        <div class="view view--recipe hidden" id="view-recipe">
+          <section id="result"></section>
+          <div class="actions">
+            <button id="edit" class="secondary">Zmeniť ingrediencie</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
 
