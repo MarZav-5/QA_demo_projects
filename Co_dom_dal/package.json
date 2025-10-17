@@ -1,0 +1,8 @@
+{
+    "name": "co-dom-dal",
+    "version": "1.0.0",
+    "type": "module",
+    "dependencies": {
+      "openai": "^4.68.4"
+    }
+  }
