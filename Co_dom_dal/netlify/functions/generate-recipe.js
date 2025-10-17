@@ -1,107 +1,90 @@
-// netlify/functions/generate-recipe.js
+// Netlify Function – generate-recipe.js
+// Používa OpenAI Responses API (nové unified rozhranie)
+
 import OpenAI from "openai";
 
-// Moderný Netlify handler (E S Modules + Response API)
-export default async (req, context) => {
-  // Povolenie CORS, aby to fungovalo aj z tvojho frontendového kódu
-  if (req.method === "OPTIONS") {
-    return new Response(null, {
-      status: 200,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type",
-      },
-    });
-  }
+const client = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY, // 🔒 uložené v Netlify environment variables
+});
 
-  if (req.method !== "POST") {
-    return Response.json({ error: "Method Not Allowed" }, { status: 405 });
-  }
-
-  // Prečítanie JSON tela požiadavky (zoznam ingrediencií)
-  let payload = {};
+export default async (request) => {
   try {
-    payload = await req.json();
-  } catch {
-    return Response.json({ error: "Invalid JSON body" }, { status: 400 });
-  }
+    const body = await request.json();
+    const ingredients = body.ingredients || [];
+    const lang = body.lang || "sk";
 
-  const ingredients = (payload.ingredients || [])
-    .map((s) => String(s || "").trim())
-    .filter(Boolean)
-    .slice(0, 4);
+    if (!ingredients.length) {
+      return Response.json(
+        { error: "NO_INGREDIENTS", detail: "Neboli zadané žiadne ingrediencie." },
+        { status: 400 }
+      );
+    }
 
-  if (ingredients.length < 1) {
-    return Response.json(
-      { error: "Zadaj aspoň 1 ingredienciu." },
-      { status: 400 }
-    );
-  }
-
-  // Vytvorenie klienta s tvojím OpenAI API kľúčom (z Netlify env)
-  const client = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-  });
-
-  // Prompt – inštrukcia pre AI
-  const prompt = `
-Si šéfkuchár a máš vytvoriť jednoduchý recept z týchto ingrediencií:
+    // --- Prompt pre OpenAI ---------------------------------------------------
+    const prompt = `
+Si skúsený šéfkuchár. Vytvor jednoduchý, chutný recept zo zadaných ingrediencií:
 ${ingredients.join(", ")}.
 
-Vráť výstup IBA ako čistý JSON (bez textu okolo) v tomto formáte:
+Odpovedz výlučne v JSON formáte:
 {
-  "title": "názov receptu",
+  "title": "Názov jedla",
   "servings": 2,
   "timeMinutes": 15,
   "ingredients": [
-    {"item":"názov suroviny","amount":"množstvo"},
-    {"item":"...","amount":"..."}
+    {"item": "názov suroviny", "amount": "množstvo"},
+    ...
   ],
-  "steps": [
-    "krok 1",
-    "krok 2",
-    "krok 3"
-  ]
+  "steps": ["krok 1", "krok 2", "krok 3"]
 }
-Jazyk: slovenčina.
+
+Použi jazyk: ${lang === "sk" ? "slovenčina" : "angličtina"}.
 `;
 
-  try {
-    // Volanie OpenAI Responses API (odporúčaný moderný spôsob)
+    // --- Volanie OpenAI API --------------------------------------------------
     const resp = await client.responses.create({
-      model: "gpt-4.1-mini", // lacný a rýchly variant
+      model: "gpt-4.1-mini", // lacnejší, rýchly model vhodný na text
       input: prompt,
-      max_output_tokens: 700,
+      max_output_tokens: 500,
     });
 
-    // Výstup modelu ako čistý text
     const text = resp.output_text || "";
-
-    // Pokus o parsovanie JSON výstupu z textu
     let data;
+
+    // Pokus o parse čistého JSONu
     try {
       data = JSON.parse(text);
     } catch {
-      const m = text.match(/\{[\s\S]*\}/);
-      data = m ? JSON.parse(m[0]) : null;
+      const match = text.match(/\{[\s\S]*\}/);
+      data = match ? JSON.parse(match[0]) : null;
     }
 
     if (!data) {
       return Response.json(
-        { error: "Nepodarilo sa spracovať odpoveď modelu." },
-        { status: 500 }
+        { error: "PARSE_ERROR", detail: "Nepodarilo sa spracovať odpoveď modelu." },
+        { status: 502 }
       );
     }
 
-    // Vrátime JSON odpoveď frontend-u
+    // --- Všetko OK → vráť JSON odpoveď ---------------------------------------
     return Response.json(data, {
       headers: { "Access-Control-Allow-Origin": "*" },
     });
+
   } catch (e) {
     console.error("Chyba AI volania:", e);
+
+    const msg = String(e?.message || "");
+    const isQuota = (e?.status === 429) || /quota|rate limit/i.test(msg);
+
+    if (isQuota) {
+      return Response.json(
+        { error: "QUOTA", detail: "Prekročený limit alebo chýba kredit (429)." },
+        { status: 429 }
+      );
+    }
+
     return Response.json(
-      { error: "Server error", detail: String(e?.message || e) },
+      { error: "SERVER", detail: msg || "Neznáma chyba servera." },
       { status: 500 }
     );
   }
