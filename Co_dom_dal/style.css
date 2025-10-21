@@ -684,3 +684,33 @@ button:active {
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+
+/* === 🔒 Zámok pozadia pre všetky mobily (iOS + Android) ============= */
+@media (max-width: 640px) {
+  html, body {
+    height: 100%;
+    overflow: hidden;              /* zabráni scrollovaniu */
+    overscroll-behavior: none;     /* odstráni bounce efekt */
+  }
+
+  .stage {
+    background: none;              /* vypneme originálne pozadie */
+    position: relative;
+    z-index: 0;
+  }
+
+  .stage::before {
+    content: "";
+    position: fixed;               /* fixované pozadie */
+    inset: 0;
+    background: url("./bckgrnd_mobile.png") center / cover no-repeat;
+    z-index: -1;                   /* pod všetkým ostatným */
+    pointer-events: none;
+    transform: translateZ(0);      /* fix pre niektoré Android GPU glitche */
+  }
+
+  .paper {
+    position: relative;
+    z-index: 1;
+  }
+}
