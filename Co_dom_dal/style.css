@@ -730,10 +730,59 @@ button:active {
   :root {
     --paper-h: clamp(460px, 88dvh, 880px);
   }
-
+}
 
 /* Voliteľné: veľmi nízke displeje (mobil v landscape) */
 @media (max-height: 420px) {
   .paper { top: 50%; transform: translate(-50%, -50%); }
   :root { --paper-h: clamp(420px, 86svh, 720px); }
+}
+
+/* === MOBIL: fix pozadia + centrovanie papiera + scroll obsahu ====== */
+@media (max-width: 640px) {
+  /* 0) Zruš „globálne“ zamknutie scrollu z predchádzajúcej verzie */
+  html, body {
+    height: auto;
+    overflow: auto !important;           /* dovoľ scrollovať obsah */
+    overscroll-behavior: none;
+  }
+
+  /* 1) Pozadie ako fixná vrstva (neposúva sa) */
+  .stage {
+    min-height: 100svh;                  /* safe viewport výška (iOS/Android) */
+    background: none;                    /* vypni background na stage */
+    position: relative;
+    z-index: 0;
+  }
+  .stage::before {
+    content: "";
+    position: fixed;                     /* kľúčové – nepohyblivé pozadie */
+    inset: 0;
+    background: url("./bckgrnd_mobile.png") center / cover no-repeat;
+    z-index: -1;
+    pointer-events: none;
+    transform: translateZ(0);            /* fix mikrolagu na niektorých Androidoch */
+  }
+
+  /* 2) Centrovanie papiera – vždy presne uprostred */
+  :root {
+    --paper-h: clamp(460px, 88svh, 880px);  /* bezpečná výška pre mobily */
+    --paper-y: 0%;                          /* nulový offset */
+  }
+  .paper {
+    position: fixed;                      /* NIE absolute – ukotvíme k viewportu */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important; /* zrušíme staré calc(-52% ...) */
+    width: min(94vw, 740px);
+    height: min(var(--paper-h), 94svh);   /* nikdy nepretiahne viewport */
+    z-index: 1;
+  }
+
+  /* 3) Scrolluj obsah papiera, nie papier samotný */
+  .sheet {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;    /* plynulý scroll na iOS/Android */
+  }
 }
