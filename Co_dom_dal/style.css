@@ -518,7 +518,7 @@ button:active {
 @media (max-width: 480px) {
   :root {
     --paper-w: 92vw;
-    --paper-h: clamp(480px, 90vh, 880px);
+    --paper-h: clamp(410px, 75vh, 750px);
     --paper-pad: clamp(10px, 3vw, 14px);
   }
 
