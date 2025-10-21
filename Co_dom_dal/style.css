@@ -523,8 +523,16 @@ button:active {
   }
 
   .paper {
-    top: 52%;
-    transform: translate(-50%, calc(-52% + var(--paper-y)));
+    outline: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  /* voliteľne mierne zväčši padding vo vnútri pre lepší balans */
+  .sheet {
+    padding-top: clamp(16px, 3.2vh, 24px);
+    padding-bottom: clamp(16px, 3.2vh, 24px);
   }
 
   /* 1. screen – formulár */
