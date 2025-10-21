@@ -714,3 +714,26 @@ button:active {
     z-index: 1;
   }
 }
+/* === Fix: vrátiť papier do stredu na mobiloch ======================= */
+@media (max-width: 640px) {
+  /* 1) Stage nech sa riadi reálnou výškou displeja (bez adresného riadku) */
+  .stage { min-height: 100dvh; }
+
+  /* 2) Reálne centrovanie papiera bez extra offsetu */
+  .paper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* zrušíme -52% a var(--paper-y) */
+  }
+
+  /* 3) Bezpečná výška papiera pre mobilný viewport */
+  :root {
+    --paper-h: clamp(460px, 88dvh, 880px);
+  }
+
+
+/* Voliteľné: veľmi nízke displeje (mobil v landscape) */
+@media (max-height: 420px) {
+  .paper { top: 50%; transform: translate(-50%, -50%); }
+  :root { --paper-h: clamp(420px, 86svh, 720px); }
+}
