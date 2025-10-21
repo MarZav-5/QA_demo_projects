@@ -5,9 +5,7 @@
   --err: #b33434;
 
   --paper-w: clamp(320px, 70vw, 700px);
-  --paper-h: clamp(230px, 50vw, 500px);
-  /* --paper-w: 700px;
-  --paper-h: 500px; */
+  --paper-h: clamp(500px, 60vh, 950px);
   --paper-pad: clamp(12px, 2vw, 22px);
   --line: 1.6;
   --paper-y: 0%;
@@ -30,11 +28,11 @@ body {
   background: #d9cfb3;
 }
 
-/* pozadie */
+/* pozadie – default (desktop/tablet) */
 .stage {
   position: relative;
   min-height: 100vh;
-  background-image: url("./bckgrnd_desktop_test.png");
+  background-image: url("./bckgrnd_desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -42,7 +40,6 @@ body {
 
 /* papier */
 .paper {
-  outline: auto;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -55,7 +52,6 @@ body {
 
 /* vnútro papiera */
 .sheet {
-  /* outline: auto; */
   width: 100%;
   height: 100%;
   padding: var(--paper-pad);
@@ -68,7 +64,6 @@ body {
   inset: 0;
   padding: clamp(12px, 2vw, 20px);
   overflow: hidden;
-  /* 1. screen bez scrollu */
   opacity: 1;
   transition: opacity .28s ease;
 }
@@ -78,27 +73,27 @@ body {
 }
 
 .paper.switching .view {
-  pointer-events: none
+  pointer-events: none;
 }
 
 /* prepínacie animácie */
 @keyframes wipe-in {
   from {
-    clip-path: inset(100% 0 0 0)
+    clip-path: inset(100% 0 0 0);
   }
 
   to {
-    clip-path: inset(0)
+    clip-path: inset(0);
   }
 }
 
 @keyframes wipe-out {
   from {
-    clip-path: inset(0)
+    clip-path: inset(0);
   }
 
   to {
-    clip-path: inset(100% 0 0 0)
+    clip-path: inset(100% 0 0 0);
   }
 }
 
@@ -115,32 +110,32 @@ h1,
 h2,
 h3 {
   margin: .2rem 0 .6rem;
-  letter-spacing: .3px
+  letter-spacing: .3px;
 }
 
 h1 {
-  font-size: clamp(28px, 3.8vw, 44px)
+  font-size: clamp(28px, 3.8vw, 44px);
 }
 
 h2 {
-  font-size: clamp(20px, 2.4vw, 28px)
+  font-size: clamp(20px, 2.4vw, 28px);
 }
 
 h3 {
   font-size: clamp(18px, 2vw, 22px);
-  color: var(--muted)
+  color: var(--muted);
 }
 
 #result h2 small {
   font-size: .8em;
-  color: #666
+  color: #666;
 }
 
 .muted {
   color: var(--muted);
 }
 
-/* === 1. SCREEN – centrovanie + posunutý nadpis + stabilný layout === */
+/* === 1. SCREEN === */
 .view--form {
   display: flex;
   flex-direction: column;
@@ -149,9 +144,7 @@ h3 {
   text-align: center;
   overflow: hidden;
   padding-top: clamp(28px, 7vh, 72px);
-  /* nadpis nižšie */
   padding-bottom: 45px;
-  /* bezpečný spodok pre tlačidlo + error */
 }
 
 .view--form header {
@@ -160,30 +153,27 @@ h3 {
   margin: 0 auto 1.4rem;
 }
 
-/* karta drží formulár uprostred */
+/* karta s formulárom */
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* inputy POD SEBOU — fixná šírka kontajnera (nekolíše) */
+/* grid inputov */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: .6rem;
   width: 320px;
-  /* pevná šírka grídu, aby nič „nerástlo“ */
   margin: 0 auto;
 }
 
-/* UNDERLINE inputy – kratšie, centrované, písanie na stred */
+/* inputy */
 input {
   width: 160px;
-  /* kratšia čiara */
   margin: 0 auto;
   text-align: center;
-  /* písanie na stred */
   padding: .6rem .2rem .45rem;
   border: none;
   border-bottom: 2px solid #2a2a2a;
@@ -205,7 +195,7 @@ input::placeholder {
   text-align: center;
 }
 
-/* tlačidlo a status – status POD tlačidlom, so vzdialenosťou a rezervou výšky */
+/* tlačidlo + status */
 .actions {
   display: flex;
   flex-direction: column;
@@ -214,7 +204,6 @@ input::placeholder {
   margin-top: 1.2rem;
   gap: .45rem;
   width: 320px;
-  /* aby šírka „zostavy“ ladila s gridom */
 }
 
 button {
@@ -239,13 +228,11 @@ button:active {
   box-shadow: 0 2px 0 #9aa6b2, inset 0 1px 0 #ffffffaa;
 }
 
-/* stavová/errorová správa – nižšie od tlačidla a bez layout shiftu */
+/* status/error */
 .status {
   display: block;
   min-height: 1.3em;
-  /* rezervuje miesto, nič neskáče */
   margin-top: .65rem;
-  /* väčší odstup od tlačidla */
   font-size: .94rem;
   color: var(--muted);
   text-align: center;
@@ -257,9 +244,9 @@ button:active {
   font-size: .92rem;
 }
 
-/* === 2. SCREEN – recept: stĺpec so šírkou a zalamovaním === */
+/* === 2. SCREEN – recept === */
 .view--recipe {
-  outline: auto;
+
   position: absolute;
   overflow: auto;
   display: block;
@@ -267,59 +254,66 @@ button:active {
   background: transparent;
 }
 
+/* Kompaktnejší a centrovaný text receptu */
 #result {
-  max-width: min(68ch, 84%);
+  outline: auto;
+  max-width: min(58ch, 78%);
   margin: 0 auto;
-  padding: 5px 0 18px;
-  /* 8px top avoids heading touching the top, 28px bottom keeps text off the bottom edge */
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  hyphens: auto;
-}
-
-#result h2,
-#result h3 {
+  margin-top: 4rem;
+  padding: 8px 0 16px;
+  line-height: 1.4;
+  font-size: 0.96rem;
   text-align: center;
-  margin-top: .6rem;
 }
 
+#result h2 {
+  font-size: clamp(18px, 2.2vw, 24px);
+  margin: .35rem 0;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+#result h3 {
+  font-size: clamp(16px, 1.8vw, 20px);
+  margin: .3rem 0;
+  color: var(--muted);
+  text-decoration: underline;
+}
+
+/* zoznamy – centrované */
 #result ul.list,
 #result ol.list {
-  list-style-position: outside;
-  /* bežné odrážky mimo textu */
-  padding-left: 1.2rem;
-  /* vizuálny okraj vnútri stĺpca */
-  margin: .4rem auto;
+  display: inline-block;
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+  margin: .3rem auto;
 }
 
 #result .list li {
-  margin: .25rem 0;
+  margin: .18rem 0;
+  text-align: center;
 }
 
-/* tlačidlo pod receptom ostane viditeľné a na stred */
-/* sticky akcie dole – full width + stred */
+/* tlačidlo pod receptom – centrované */
 .view--recipe .actions {
-  position: static;
-  /* už nie sticky ani absolute */
-  display: flex;
-  justify-content: center;
-  /* button na stred */
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   width: 100%;
-  margin-top: 24px;
-  /* priestor nad buttonom */
-  padding-bottom: 12px;
-  /* trochu vzduchu od spodku listu */
+  margin-top: 16px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-/* pre istotu – samotný button bude centrovateľný */
 .view--recipe .actions button {
   display: inline-flex;
-  margin: 0;
-  /* nech ho nič neposúva */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-/* === Loader overlay (panvica v strede) === */
+/* === Loader (panvica) === */
 .loader {
   position: absolute;
   inset: 0;
@@ -351,15 +345,15 @@ button:active {
 
 @keyframes wok-tilt {
   0% {
-    transform: rotate(-7deg)
+    transform: rotate(-7deg);
   }
 
   50% {
-    transform: rotate(6deg)
+    transform: rotate(6deg);
   }
 
   100% {
-    transform: rotate(-7deg)
+    transform: rotate(-7deg);
   }
 }
 
@@ -449,13 +443,244 @@ button:active {
   border: 2px solid #2a2a2a;
   border-radius: 50%;
 }
+/* ==================================================================== */
+/* ======================  📱 RESPONSIVE MEDIA QUERIES  ================= */
+/* ==================================================================== */
 
-/* responzívne dolaďovačky */
-/* @media (max-width:1023px) {
+
+/* === 1) Telefóny (všeobecne) – do 640px ============================== */
+@media (max-width: 640px) and (orientation: portrait) {
+  :root {
+    --paper-w: 94vw;
+    --paper-h: clamp(520px, 92vh, 980px);
+    --paper-pad: clamp(10px, 3vw, 16px);
+  }
+
+  .stage {
+    background-image: url("./bckgrnd_mobile.png");
+    background-size: cover;
+    background-position: center;
+  }
+
   .paper {
-    width: min(92vw, 740px);
-    height: clamp(560px, 88vh, 920px);
     top: 52%;
     transform: translate(-50%, calc(-52% + var(--paper-y)));
   }
-} */
+
+  .view--form {
+    padding-top: clamp(20px, 8vh, 80px);
+    padding-bottom: 56px;
+  }
+
+  .view--form .grid,
+  .view--form .actions {
+    width: min(92vw, 380px);
+  }
+
+  .view--form input {
+    width: min(80vw, 300px);
+    padding: .7rem .3rem .5rem;
+    border-bottom-width: 2px;
+    font-size: 1rem;
+  }
+
+  .view--form .actions button {
+    display: inline-flex;
+    width: auto;
+    min-width: 160px;
+    padding: .9rem 1.4rem;
+    justify-content: center;
+  }
+
+  .status {
+    font-size: .95rem;
+    margin-top: .7rem;
+  }
+
+  #result {
+    max-width: min(72ch, 92%);
+    padding: 10px 0 24px;
+  }
+
+  #result h2 {
+    font-size: clamp(18px, 4.5vw, 22px);
+  }
+
+  #result ul.list,
+  #result ol.list {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+}
+
+
+/* === 2) Väčšina moderných mobilov (≤480px) =========================== */
+@media (max-width: 480px) {
+  :root {
+    --paper-w: 92vw;
+    --paper-h: clamp(480px, 90vh, 880px);
+    --paper-pad: clamp(10px, 3vw, 14px);
+  }
+
+  .paper {
+    top: 52%;
+    transform: translate(-50%, calc(-52% + var(--paper-y)));
+  }
+
+  /* 1. screen – formulár */
+  .view--form {
+    padding-top: clamp(24px, 8vh, 64px);
+    padding-bottom: 52px;
+  }
+
+  .view--form .grid,
+  .view--form .actions {
+    width: min(90vw, 340px);
+  }
+
+  input {
+    width: min(80vw, 180px) !important;
+    font-size: 0.95rem;
+    padding: .65rem .2rem .45rem;
+  }
+
+  .view--form .actions button {
+    padding: .8rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .status {
+    font-size: .9rem;
+    margin-top: .6rem;
+  }
+
+  /* 2. screen – recept */
+  #result {
+    max-width: min(70ch, 85%);
+    font-size: 0.94rem;
+    padding: 10px 0 20px;
+  }
+
+  #result h2 {
+    font-size: clamp(18px, 4.5vw, 22px);
+  }
+
+  #result h3 {
+    font-size: clamp(15px, 4vw, 20px);
+  }
+
+  #result ul.list,
+  #result ol.list {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  .view--recipe .actions {
+    margin-top: 16px;
+    padding-bottom: 12px;
+  }
+
+  .view--recipe .actions button {
+    font-size: 0.95rem;
+    padding: .8rem 1.3rem;
+  }
+}
+
+
+/* === 3) Veľmi úzke displeje (staršie mobily ≤340px) ================== */
+@media (max-width: 340px) {
+  .view--form .grid,
+  .view--form .actions {
+    width: 94vw;
+  }
+
+  .view--form input {
+    width: 88vw;
+  }
+}
+
+
+/* === 4) Tablety a menšie notebooky (641–1024px) ====================== */
+@media (min-width: 641px) and (max-width: 1024px) {
+  :root {
+    --paper-w: min(92vw, 740px);
+    --paper-h: clamp(560px, 88vh, 920px);
+    --paper-pad: clamp(10px, 2.4vw, 20px);
+  }
+
+  .stage {
+    background-image: url("./bckgrnd_desktop.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .paper {
+    top: 50%;
+    transform: translate(-50%, calc(-50% + var(--paper-y)));
+  }
+
+  #result {
+    max-width: min(68ch, 84%);
+  }
+
+  #result h2 {
+    font-size: clamp(18px, 4.5vw, 22px);
+  }
+
+  #result h3 {
+    font-size: clamp(15px, 4vw, 20px);
+  }
+}
+
+
+/* === 5) Desktopy (1025–1599px) – tlačidlo vždy viditeľné ============ */
+@media (min-width: 1025px) and (max-width: 1599px) {
+  :root {
+    --paper-h: clamp(520px, 60vw, 720px);
+  }
+
+  #result {
+    padding-bottom: 28px;
+  }
+
+  .view--recipe .actions {
+    margin-top: 20px;
+    padding-bottom: 16px;
+  }
+}
+
+
+/* === 6) Veľké monitory (≥1600px) ==================================== */
+@media (min-width: 1600px) and (orientation: landscape) {
+  .stage {
+    background-size: 100%;
+    background-position: center;
+  }
+
+  :root {
+    --paper-w: clamp(700px, 60vw, 900px);
+    --paper-h: clamp(500px, 50vw, 700px);
+  }
+}
+
+
+/* === 7) Nízke displeje (napr. mobil v landscape) ==================== */
+@media (max-height: 420px) {
+  .view--form {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  .view--recipe {
+    padding-top: 10px;
+  }
+}
+
+
+/* === 8) Univerzálne: zalamovanie textu a ochrana layoutu ============ */
+.view--form,
+.view--form .grid,
+.view--form .actions {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
