@@ -140,7 +140,7 @@ Passed
 # Kalkulačka percent
 
 <p align="left">
-  <img src="kalkulacka_percent.png" width="300">
+  <img src="overview_screenshots/kalkulacka_percent.png" width="300">
 </p>
 
 Jednoduchá aplikácia na výpočet percenta. Vytvorená s úmyselnými chybami, ktoré som následne testoval a dokumentoval v rámci QA scenárov.
