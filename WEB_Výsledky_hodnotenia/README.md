@@ -23,7 +23,7 @@ Web bol pôvodne vytvorený ako pomôcka pre študentov na Vysokej škole múzic
 
 ## Odkaz na aplikáciu
 
-Testovaná webová aplikácia bola dostupná na:  
+Testovaná webová aplikácia je dostupná na:  
 [`https://webtest-solfeggio.netlify.app/`](https://webtest-solfeggio.netlify.app/)
 
 ---
