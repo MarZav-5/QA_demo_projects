@@ -82,6 +82,11 @@ Time stamp:
 
 # WEB Výsledky hodnotenia
 
+<p align="left">
+  <img src="overview_screenshots/web_vysledky_1.png" width="300">
+  <img src="overview_screenshots/web_vysledky_2.png" width="300">
+</p>
+
 Webová aplikácia, ktorá umožňuje študentom po zadaní emailu zobraziť výsledky semestrálneho testu a stiahnuť jeho scan. Projekt pôvodne slúžil ako nástroj pre mojich študentov kurzu *Solfeggio* na Vysokej škole múzických umení, neskôr som ho adaptoval ako QA demoprojekt.
 
 - [README projektu](./WEB_Výsledky_hodnotenia/README.md)
