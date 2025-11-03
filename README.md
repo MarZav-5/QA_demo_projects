@@ -12,6 +12,10 @@ Tieto projekty demonštrujú môj praktický prístup k testovaniu a dôraz na s
 
 # PUTICA$H
 
+(./overview_screenshots/puticash_1.png)
+(./overview_screenshots/puticash_2.png)
+
+
 Webová aplikácia, ktorá pomáha zákazníkom obľúbeného bratislavského podniku rýchlo nájsť najbližší bankomat. Po výbere baru z úvodného zoznamu sa zobrazí mapa s markerom baru, markerom bankomatu a trasou chôdze vrátane odhadovaného času a vzdialenosti.Aplikácia podporuje fallback výpočet pri zlyhaní Directions API a obsahuje základné QA testy (smoke testovacie prípady na overenie základnej použiteľnosti, traceability matrix, bug reporty...) ako súčasť demo projektu.
 
 - [README projektu](./PUTICASH/README.md)
