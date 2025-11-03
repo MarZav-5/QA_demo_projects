@@ -11,7 +11,7 @@ Tieto projekty demonštrujú môj praktický prístup k testovaniu a dôraz na s
 ## Prehľad projektov
 
 # PUTICA$H
-<p align="center">
+<p align="left">
   <img src="overview_screenshots/puticash_1.png" width="300">
   <img src="overview_screenshots/puticash_2.png" width="300">
 </p>
