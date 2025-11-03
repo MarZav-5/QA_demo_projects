@@ -26,7 +26,7 @@ Hra bola vytvorená s využitím ChatGPT a upravená do funkčnej webovej formy.
 
 ## Odkaz na aplikáciu
 
-Testovaná webová hra bola dostupná na:  
+Testovaná webová aplikácia je dostupná na:  
 [`https://snake-game-for-qa.netlify.app/`](https://snake-game-qa.netlify.app/)
 
 ---
