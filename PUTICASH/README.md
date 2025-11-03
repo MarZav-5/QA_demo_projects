@@ -29,7 +29,7 @@ Aplikácia vznikla ako reakcia na dlhodobý problém nemožnosti platiť kartou 
 
 ## Odkaz na aplikáciu
 
-Testovaná webová aplikácia bola dostupná na:  
+Testovaná webová aplikácia je dostupná na:  
 https://puticash.netlify.app/
 
 ---
