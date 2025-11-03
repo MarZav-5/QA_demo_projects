@@ -201,6 +201,11 @@ Dôkaz:
 
 # Snake Game
 
+<p align="left">
+  <img src="overview_screenshots/snake_game.png" width="300">
+</p>
+
+
 Webová verzia klasickej hry Snake s nasimulovanými chybami. Slúži ako cvičenie z testovania UI, kolízií, pohybu a reakcií systému. Obsahuje aj video dôkaz bugu.
 
 - [README projektu](./Snake_game/README.md)
