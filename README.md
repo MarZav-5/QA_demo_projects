@@ -37,7 +37,7 @@ Súvisiaca BR: BR-01, BR-03
 Priorita: Vysoká
 
 Popis:
-Na mapovom screene sa vykreslí pešia trasa medzi vybraným barom a prislúchajúcim ATM. Používateľ v paneli nad mapou vidí metriky vzdialenosť a čas. 
+Na screene s mapou sa vykreslí pešia trasa medzi vybraným barom a prislúchajúcim ATM. Používateľ v paneli nad mapou vidí metriky vzdialenosť a čas. 
 
 PRE-REQ:
 -  Postupne vybraný každý bar z úvodného screenu
