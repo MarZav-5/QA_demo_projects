@@ -25,7 +25,7 @@ Aplikácia bola vytvorená s využitím asistencie ChatGPT a upravená do funkč
 
 ## Odkaz na aplikáciu
 
-Testovaná webová aplikácia bola dostupná na:  
+Testovaná webová aplikácia je dostupná na:  
 [`https://percentage-calculator-2.netlify.app/`](https://percentage-calculator-2.netlify.app/)
 
 ---
