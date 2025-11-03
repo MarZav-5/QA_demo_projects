@@ -143,7 +143,7 @@ Passed
   <img src="overview_screenshots/kalkulacka_percent.png" width="300">
 </p>
 
-Jednoduchá aplikácia na výpočet percenta. Vytvorená s úmyselnými chybami, ktoré som následne testoval a dokumentoval v rámci QA scenárov.
+Jednoduchá aplikácia na výpočet percent. Je vytvorená s úmyselnými chybami, ktoré som následne testoval a dokumentoval v rámci QA scenárov.
 
 - [README projektu](./Kalkulacka_percent/README.md)
 
