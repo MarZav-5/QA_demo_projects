@@ -1,4 +1,4 @@
-# QA Demo Projects – Portfólio manuálneho testovania
+# QA Projects – Portfólio manuálneho testovania
 
 Vitajte v mojom repozitári s ukážkovými QA projektmi, ktoré som vytvoril ako súčasť môjho záujmu o oblasť softvérového testovania. Každý projekt vznikol ako samostatné cvičenie v manuálnom testovaní – od definovania business požiadaviek, cez návrh a spustenie testovacích prípadov, až po evidenciu bug reportov.
 
